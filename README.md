@@ -5,4 +5,8 @@ Music rebels
 
 Sample Android app in [Kotlin](https://kotlinlang.org/) for searching artists on [Spotify](https://www.spotify.com/).
 
-## Building the ap
+## Building the app
+* [Gradle](https://gradle.org/) build system
+* Requires [Java 8](https://java.com/en/download/faq/java8.xml)
+
+Important note: to use the services you need to
