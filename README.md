@@ -17,4 +17,5 @@ Important note: to use the services you need to register on [Spotify Developer C
  
  host="<your_host>"
  
-## Authenticatio
+## Authentication
+* Using [Spotify Android SDK](https://github.com/spotify/android-sdk) for authentication and artist search. 
