@@ -18,4 +18,8 @@ Important note: to use the services you need to register on [Spotify Developer C
  host="<your_host>"
  
 ## Authentication
-* Using [Spotify Android SDK](https://github.com/spotify/android-sdk) for authentication and artist search. 
+* Using [Spotify Android SDK](https://github.com/spotify/android-sdk) for authentication and artist search. For using the app you need to login or sign up for a Spotify account.
+
+## Architecture
+* MVVM (Model-View-ViewModel)
+* [Android Arhitecture Co
