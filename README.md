@@ -23,4 +23,8 @@ Important note: to use the services you need to register on [Spotify Developer C
 ## Architecture
 * MVVM (Model-View-ViewModel)
 * [Android Arhitecture Components](https://developer.android.com/topic/libraries/architecture/)
-* [LiveData](https://developer.android.com/reference/android/arch/lifecycl
+* [LiveData](https://developer.android.com/reference/android/arch/lifecycle/LiveData)
+* [RxKotlin](https://github.com/ReactiveX/RxKotlin)
+* [RxRelay](https://github.com/JakeWharton/RxRelay)
+
+#
