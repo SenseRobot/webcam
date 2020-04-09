@@ -27,4 +27,8 @@ Important note: to use the services you need to register on [Spotify Developer C
 * [RxKotlin](https://github.com/ReactiveX/RxKotlin)
 * [RxRelay](https://github.com/JakeWharton/RxRelay)
 
-#
+## Dependency management
+* [Google/Dagger](https://github.com/google/dagger) - Dependency injection
+
+## Network
+* [Square/
