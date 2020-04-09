@@ -36,4 +36,9 @@ Important note: to use the services you need to register on [Spotify Developer C
 * [Square/Moshi](https://github.com/square/moshi) - Network JSON deserializer
 
 ## Unit tests
-* [JUnit4](https://
+* [JUnit4](https://junit.org/junit4/)
+* [Mockito-Kotlin](https://github.com/nhaarman/mockito-kotlin)
+
+## Other
+### Image loading
+* [Glide](https://github.co
