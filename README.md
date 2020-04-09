@@ -31,4 +31,5 @@ Important note: to use the services you need to register on [Spotify Developer C
 * [Google/Dagger](https://github.com/google/dagger) - Dependency injection
 
 ## Network
-* [Square/
+* [Square/Retrofit](https://github.com/square/retrofit) - HTTP RESTful connections
+* [OkHttp 3](https://square.github.io/okhttp/3.x/okhttp/) - HTTP client
