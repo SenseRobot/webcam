@@ -41,4 +41,7 @@ Important note: to use the services you need to register on [Spotify Developer C
 
 ## Other
 ### Image loading
-* [Glide](https://github.co
+* [Glide](https://github.com/bumptech/glide) - 
+An image loading and caching library for Android focused on smooth scrolling
+### Logging
+* [Timber](https://gi
