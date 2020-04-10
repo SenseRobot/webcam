@@ -44,4 +44,6 @@ Important note: to use the services you need to register on [Spotify Developer C
 * [Glide](https://github.com/bumptech/glide) - 
 An image loading and caching library for Android focused on smooth scrolling
 ### Logging
-* [Timber](https://gi
+* [Timber](https://github.com/JakeWharton/timber)
+### Code quality
+* [Ktlint](https://ktlint.github.io/) - An anti-bikeshedding Kotlin linter with built-i
