@@ -50,4 +50,5 @@ An image loading and caching library for Android focused on smooth scrolling
 * [Detekt](https://github.com/arturbosch/detekt) - Static code analysis for Kotlin
 
 ## Roadmap:
-* [Espress
+* [Espresso](https://developer.android.com/training/testing/espresso/) - UI testing framework
+* [ProGuard](https://www.guardsquare.com/en/p
