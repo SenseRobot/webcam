@@ -51,4 +51,6 @@ An image loading and caching library for Android focused on smooth scrolling
 
 ## Roadmap:
 * [Espresso](https://developer.android.com/training/testing/espresso/) - UI testing framework
-* [ProGuard](https://www.guardsquare.com/en/p
+* [ProGuard](https://www.guardsquare.com/en/products/proguard) - Code obfuscation
+* [CircleCI](https://circleci.com/) - Continuous integration
+* [Firebase](https://f
