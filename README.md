@@ -56,4 +56,9 @@ An image loading and caching library for Android focused on smooth scrolling
 * [Firebase](https://firebase.google.com/) - Analytics
 
 ## Wunderlist:
-* [Android Jetpack/Navigation](https://developer.android.com/topic/libraries/archite
+* [Android Jetpack/Navigation](https://developer.android.com/topic/libraries/architecture/navigation/) - Android navigation framework
+
+## Disclaimer:
+```PERSONAL PROJECT - NOT INTENDED FOR COMMERCIAL USE```
+
+
