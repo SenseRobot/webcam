@@ -17,4 +17,5 @@ android {
 
     Properties props = new Properties()
     if (file('../local.properties').exists()) {
-        // if 
+        // if it doesn't exist, the props will all be null and the builds will fail
+        props.load(new FileInputStream(fi
