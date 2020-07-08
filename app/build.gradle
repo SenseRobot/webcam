@@ -24,4 +24,10 @@ android {
     defaultConfig {
         applicationId buildConfig.packageName
 
-        minSdkVersion buildConfig.min
+        minSdkVersion buildConfig.minSdk
+        targetSdkVersion buildConfig.targetSdk
+
+        versionCode 1
+        versionName "0.1.0"
+
+        buildConfigField STRING, SPOT
