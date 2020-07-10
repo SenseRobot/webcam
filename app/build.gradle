@@ -30,4 +30,6 @@ android {
         versionCode 1
         versionName "0.1.0"
 
-        buildConfigField STRING, SPOT
+        buildConfigField STRING, SPOTIFY_CLIENT_ID, props['clientID']
+        buildConfigField STRING, SPOTIFY_REDIRECT_SCHEME, props['scheme']
+        buildConfigFi
