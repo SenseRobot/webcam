@@ -33,4 +33,7 @@ android {
         buildConfigField STRING, SPOTIFY_CLIENT_ID, props['clientID']
         buildConfigField STRING, SPOTIFY_REDIRECT_SCHEME, props['scheme']
         buildConfigField STRING, SPOTIFY_REDIRECT_HOST, props['host']
-        buildConfigField STRING, SPOTIFY_BASE_API_URL, '"https://api.spotify.c
+        buildConfigField STRING, SPOTIFY_BASE_API_URL, '"https://api.spotify.com/"'
+        buildConfigField STRING, BASE_IMAGE_URL, '"http://image/"'
+
+        testInstrumentationRunner "android.support.
