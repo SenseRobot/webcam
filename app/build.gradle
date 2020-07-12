@@ -36,4 +36,9 @@ android {
         buildConfigField STRING, SPOTIFY_BASE_API_URL, '"https://api.spotify.com/"'
         buildConfigField STRING, BASE_IMAGE_URL, '"http://image/"'
 
-        testInstrumentationRunner "android.support.
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        target
