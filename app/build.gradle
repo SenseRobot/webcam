@@ -41,4 +41,9 @@ android {
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
-        target
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    signingConfigs {
+        release {
+            storeFile file(def
