@@ -76,4 +76,6 @@ android {
     applicationVariants.all { variant ->
         variant.getCompileConfiguration().resolutionStrategy {
             force "com.android.support:support-v7:$versions.supportLib"
-            force "c
+            force "com.android.support:support-v4:$versions.supportLib"
+            force "com.android.support:design:$versions.supportLib"
+        }
