@@ -46,4 +46,7 @@ android {
 
     signingConfigs {
         release {
-            storeFile file(def
+            storeFile file(defaultConfig.applicationId + '.jks')
+            storePassword props['storePassword']
+            keyAlias props['keyAlias']
+            keyPa
