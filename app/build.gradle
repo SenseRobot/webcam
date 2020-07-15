@@ -79,3 +79,8 @@ android {
             force "com.android.support:support-v4:$versions.supportLib"
             force "com.android.support:design:$versions.supportLib"
         }
+
+        variant.getRuntimeConfiguration().resolutionStrategy {
+            force "com.android.support:design:$versions.supportLib"
+        }
+    
