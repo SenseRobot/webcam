@@ -83,4 +83,14 @@ android {
         variant.getRuntimeConfiguration().resolutionStrategy {
             force "com.android.support:design:$versions.supportLib"
         }
-    
+    }
+
+    testOptions {
+        unitTests.returnDefaultValues = true
+    }
+
+    lintOptions {
+        abortOnError = true
+    }
+
+    and
