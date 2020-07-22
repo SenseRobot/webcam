@@ -93,4 +93,11 @@ android {
         abortOnError = true
     }
 
-    and
+    androidExtensions {
+        experimental = true
+    }
+}
+
+dependencies {
+    // Local libs
+    implementation fileTree(include:
