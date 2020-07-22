@@ -100,4 +100,10 @@ android {
 
 dependencies {
     // Local libs
-    implementation fileTree(include:
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+
+    // Spotify
+    implementation "com.spotify.android:auth:$versions.spotify"
+
+    // Kotlin
+    implementation "
