@@ -110,4 +110,6 @@ dependencies {
 
     // Support
     //noinspection GradleCompatible
-    implementation "com
+    implementation "com.android.support:appcompat-v7:$versions.supportLib"
+    implementation "com.android.support:recyclerview-v7:$versions.supportLib"
+  
