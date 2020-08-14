@@ -117,4 +117,6 @@ dependencies {
 
     // Network
     implementation "com.squareup.okhttp3:okhttp:$versions.okhttp"
-    implementation "com
+    implementation "com.squareup.okhttp3:logging-interceptor:$versions.okhttp"
+    implementation "com.squareup.retrofit2:retrofit:$versions.retrofit"
+    impl
