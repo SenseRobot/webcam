@@ -120,4 +120,6 @@ dependencies {
     implementation "com.squareup.okhttp3:logging-interceptor:$versions.okhttp"
     implementation "com.squareup.retrofit2:retrofit:$versions.retrofit"
     implementation "com.squareup.retrofit2:adapter-rxjava2:$versions.retrofit"
-    implementation "com.squareup.retrofit2:converter-sc
+    implementation "com.squareup.retrofit2:converter-scalars:$versions.retrofit"
+    implementation "com.squareup.moshi:moshi:$versions.moshi"
+    kapt "com.squareup.moshi:mos
