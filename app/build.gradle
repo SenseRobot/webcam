@@ -127,4 +127,8 @@ dependencies {
 
     // Image
     implementation "com.github.bumptech.glide:glide:$versions.glide"
-    kapt "com.github.bumptech.glide:compiler:$versions.g
+    kapt "com.github.bumptech.glide:compiler:$versions.glide"
+
+    // Dependency injection
+    implementation "javax.annotation:javax.annotation-api:$versions.javaAnnotation"
+    implementation "co
