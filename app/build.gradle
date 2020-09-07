@@ -131,4 +131,6 @@ dependencies {
 
     // Dependency injection
     implementation "javax.annotation:javax.annotation-api:$versions.javaAnnotation"
-    implementation "co
+    implementation "com.google.dagger:dagger:$versions.dagger"
+    implementation "com.google.dagger:dagger-android:$versions.dagger"
+    implementation "com.goo
