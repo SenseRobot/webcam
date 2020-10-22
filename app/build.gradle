@@ -149,4 +149,10 @@ dependencies {
     implementation "io.reactivex.rxjava2:rxandroid:$versions.rxAndroid"
     implementation "io.reactivex.rxjava2:rxkotlin:$versions.rxKotlin"
     implementation "com.jakewharton.rxbinding2:rxbinding-kotlin:$versions.rxBinding"
-    implementation "com.jakewharton.rxrelay2
+    implementation "com.jakewharton.rxrelay2:rxrelay:$versions.rxRelay"
+
+    // Logging
+    implementation "com.jakewharton.timber:timber:$versions.timber"
+
+    // Test
+    testImplementat
