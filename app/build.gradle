@@ -155,4 +155,6 @@ dependencies {
     implementation "com.jakewharton.timber:timber:$versions.timber"
 
     // Test
-    testImplementat
+    testImplementation "junit:junit:$versions.junit"
+    testImplementation "org.mockito:mockito-core:$versions.mockito"
+    testImplementation "com.nhaarman:mockito-kotlin
