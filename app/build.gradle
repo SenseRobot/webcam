@@ -161,4 +161,8 @@ dependencies {
     testImplementation "org.assertj:assertj-core:$versions.assertJ"
     testImplementation("android.arch.core:core-testing:$versions.arch", {
         exclude group: 'com.android.support', module: 'support-compat'
-        exclu
+        exclude group: 'com.android.support', module: 'support-annotations'
+        exclude group: 'com.android.support', module: 'support-core-utils'
+    })
+
+   
