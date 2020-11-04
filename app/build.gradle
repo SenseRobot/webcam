@@ -159,4 +159,6 @@ dependencies {
     testImplementation "org.mockito:mockito-core:$versions.mockito"
     testImplementation "com.nhaarman:mockito-kotlin:$versions.mockitoKotlin"
     testImplementation "org.assertj:assertj-core:$versions.assertJ"
-    testImplementation(
+    testImplementation("android.arch.core:core-testing:$versions.arch", {
+        exclude group: 'com.android.support', module: 'support-compat'
+        exclu
