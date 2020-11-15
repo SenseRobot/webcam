@@ -167,4 +167,10 @@ dependencies {
 
     // Android Test
     androidTestImplementation "com.android.support.test:runner:$versions.testRunner"
-    androidTestIm
+    androidTestImplementation "com.android.support.test.espresso:espresso-core:$versions.espresso"
+}
+
+ktlint {
+    debug = true
+    verbose = true
+    android = true
