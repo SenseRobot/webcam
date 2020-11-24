@@ -174,3 +174,6 @@ ktlint {
     debug = true
     verbose = true
     android = true
+    outputToConsole = true
+    reporters = ["PLAIN"]
+}
