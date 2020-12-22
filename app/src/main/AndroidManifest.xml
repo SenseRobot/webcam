@@ -23,4 +23,6 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ui.spotify.artists.ArtistsAct
+            android:name=".ui.spotify.artists.ArtistsActivity"
+            android:launchMode="singleTop"
+            android:parentActivityName=".ui.spotify.authentication.Authentication
