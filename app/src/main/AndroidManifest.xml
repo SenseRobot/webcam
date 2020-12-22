@@ -25,4 +25,8 @@
         <activity
             android:name=".ui.spotify.artists.ArtistsActivity"
             android:launchMode="singleTop"
-            android:parentActivityName=".ui.spotify.authentication.Authentication
+            android:parentActivityName=".ui.spotify.authentication.AuthenticationActivity" />
+
+        <activity
+            android:name=".ui.spotify.artists.details.ArtistDetailsActivity"
+           
