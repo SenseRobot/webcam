@@ -29,4 +29,7 @@
 
         <activity
             android:name=".ui.spotify.artists.details.ArtistDetailsActivity"
-           
+            android:parentActivityName=".ui.spotify.artists.ArtistsActivity" />
+    </application>
+
+</manifest>
