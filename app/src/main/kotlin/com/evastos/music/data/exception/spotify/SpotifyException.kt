@@ -10,4 +10,5 @@ sealed class SpotifyException : Throwable() {
 
     class NetworkFailFastException : SpotifyException()
 
-    class
+    class UnknownException : SpotifyException()
+}
