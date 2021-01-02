@@ -7,4 +7,5 @@ import com.squareup.moshi.JsonClass
 data class AuthData(
     @Json(name = "authToken") val authToken: String,
     @Json(name = "authTokenExpiresIn") val authTokenExpiresIn: Long, // millis
-    @Json(name = "authTokenRefreshedAt") val auth
+    @Json(name = "authTokenRefreshedAt") val authTokenRefreshedAt: Long // millis
+)
