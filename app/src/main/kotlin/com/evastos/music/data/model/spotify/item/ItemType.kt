@@ -9,4 +9,11 @@ import java.util.Locale
 enum class ItemType {
     @Json(name = "album")
     ALBUM,
-    @Json(name = "artist"
+    @Json(name = "artist")
+    ARTIST,
+    @Json(name = "playlist")
+    PLAYLIST,
+    @Json(name = "track")
+    TRACK;
+
+    override fun toString(): Strin
