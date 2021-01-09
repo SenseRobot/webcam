@@ -16,4 +16,7 @@ enum class ItemType {
     @Json(name = "track")
     TRACK;
 
-    override fun toString(): Strin
+    override fun toString(): String {
+        return name.toLowerCase(Locale.US)
+    }
+}
