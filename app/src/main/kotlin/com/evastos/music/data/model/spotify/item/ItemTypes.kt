@@ -8,4 +8,7 @@ class ItemTypes {
         itemTypes.add(itemType)
     }
 
-    override fun 
+    override fun toString(): String {
+        return itemTypes.joinToString(separator = ",")
+    }
+}
