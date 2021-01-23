@@ -1,1 +1,9 @@
-package com.evastos.music.data.model.spotify
+package com.evastos.music.data.model.spotify.item.album
+
+import com.squareup.moshi.Json
+import com.squareup.moshi.JsonClass
+
+/**
+ * Album Spotify item.
+ */
+@JsonClass(gener
