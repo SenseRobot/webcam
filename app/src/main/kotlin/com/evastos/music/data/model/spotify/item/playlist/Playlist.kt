@@ -6,3 +6,7 @@ import com.squareup.moshi.JsonClass
 /**
  * Playlist Spotify item.
  */
+@JsonClass(generateAdapter = true)
+data class Playlist(
+    @Json(name = "href") val href: String?
+)
