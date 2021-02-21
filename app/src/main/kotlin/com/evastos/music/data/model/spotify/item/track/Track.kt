@@ -6,4 +6,7 @@ import com.squareup.moshi.JsonClass
 /**
  * Track Spotify item.
  */
-@Json
+@JsonClass(generateAdapter = true)
+data class Track(
+    @Json(name = "href") val href: String?
+)
