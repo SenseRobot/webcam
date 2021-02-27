@@ -11,4 +11,5 @@ import kotlinx.android.parcel.Parcelize
 @Parcelize
 @JsonClass(generateAdapter = true)
 data class ExternalUrls(
-    @Json(name = "spotify") val s
+    @Json(name = "spotify") val spotify: String?
+) : Parcelable
