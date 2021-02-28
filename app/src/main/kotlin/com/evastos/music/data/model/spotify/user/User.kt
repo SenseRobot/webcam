@@ -1,4 +1,8 @@
 package com.evastos.music.data.model.spotify.user
 
 import com.squareup.moshi.Json
-im
+import com.squareup.moshi.JsonClass
+
+@JsonClass(generateAdapter = true)
+data class User(
+    @Json(name = "id") val id: St
