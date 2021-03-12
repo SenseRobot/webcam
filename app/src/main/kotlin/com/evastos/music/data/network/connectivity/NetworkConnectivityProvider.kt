@@ -8,4 +8,7 @@ import javax.inject.Inject
 open class NetworkConnectivityProvider
 @Inject constructor(@AppContext private val context: Context) {
 
-    open fun isConnected(): B
+    open fun isConnected(): Boolean {
+        return with(context) {
+            val connectivityManager =
+                    this.getSystemServic
