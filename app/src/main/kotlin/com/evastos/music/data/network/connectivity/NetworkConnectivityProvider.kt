@@ -11,4 +11,6 @@ open class NetworkConnectivityProvider
     open fun isConnected(): Boolean {
         return with(context) {
             val connectivityManager =
-                    this.getSystemServic
+                    this.getSystemService(Context.CONNECTIVITY_SERVICE) as? ConnectivityManager?
+            connectivityManager?.activeNetworkInfo?.let { info ->
+         
