@@ -13,4 +13,9 @@ open class NetworkConnectivityProvider
             val connectivityManager =
                     this.getSystemService(Context.CONNECTIVITY_SERVICE) as? ConnectivityManager?
             connectivityManager?.activeNetworkInfo?.let { info ->
-         
+                return@with info.isConnected
+            }
+            false
+        }
+    }
+}
