@@ -7,4 +7,8 @@ import javax.inject.Inject
 class HeadersInterceptor @Inject constructor() : Interceptor {
 
     companion object {
-        private c
+        private const val HEADER_ACCEPT = "Accept"
+        private const val ACCEPT_JSON = "application/json"
+    }
+
+    override fun intercept(chain
