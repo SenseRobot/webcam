@@ -13,4 +13,8 @@ class HeadersInterceptor @Inject constructor() : Interceptor {
 
     override fun intercept(chain: Interceptor.Chain): Response {
         val request = chain.request().newBuilder().apply {
-            header(HEADER_ACCEPT,
+            header(HEADER_ACCEPT, ACCEPT_JSON)
+        }.build()
+        return chain.proceed(request)
+    }
+}
