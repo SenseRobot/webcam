@@ -10,4 +10,7 @@ import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.schedulers.Schedulers
 import java.util.concurrent.TimeUnit
 
-private cons
+private const val DELAY_ERROR_MILLIS = 400L
+
+fun <T> Single<T>.applySchedulers(): Single<T> {
+    return this.subscribeOn(Schedulers.io()).
