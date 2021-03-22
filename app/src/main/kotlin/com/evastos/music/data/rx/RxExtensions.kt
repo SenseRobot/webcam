@@ -13,4 +13,8 @@ import java.util.concurrent.TimeUnit
 private const val DELAY_ERROR_MILLIS = 400L
 
 fun <T> Single<T>.applySchedulers(): Single<T> {
-    return this.subscribeOn(Schedulers.io()).
+    return this.subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread())
+}
+
+fun <T> Observable<T>.applySchedulers(): Observable<T> {
+    return this.subscr
