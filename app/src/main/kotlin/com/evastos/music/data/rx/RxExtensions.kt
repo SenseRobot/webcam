@@ -17,4 +17,7 @@ fun <T> Single<T>.applySchedulers(): Single<T> {
 }
 
 fun <T> Observable<T>.applySchedulers(): Observable<T> {
-    return this.subscr
+    return this.subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread())
+}
+
+fun <T, E : Throwable> Single<T>.mapException(exceptionMapper: 
