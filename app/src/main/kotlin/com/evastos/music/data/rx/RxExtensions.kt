@@ -20,4 +20,7 @@ fun <T> Observable<T>.applySchedulers(): Observable<T> {
     return this.subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread())
 }
 
-fun <T, E : Throwable> Single<T>.mapException(exceptionMapper: 
+fun <T, E : Throwable> Single<T>.mapException(exceptionMapper: ExceptionMapper<E>): Single<T> {
+    return retryWhen {
+        return@retryWhen it.flatMap { throwable ->
+            Flowable.error<Throwable> 
