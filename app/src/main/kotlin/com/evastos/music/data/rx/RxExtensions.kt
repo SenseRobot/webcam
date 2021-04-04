@@ -23,4 +23,12 @@ fun <T> Observable<T>.applySchedulers(): Observable<T> {
 fun <T, E : Throwable> Single<T>.mapException(exceptionMapper: ExceptionMapper<E>): Single<T> {
     return retryWhen {
         return@retryWhen it.flatMap { throwable ->
-            Flowable.error<Throwable> 
+            Flowable.error<Throwable> {
+                exceptionMapper.map(throwable)
+            }
+        }
+    }
+}
+
+fun <T> Single<T>.delayError(): Single<T> =
+  
