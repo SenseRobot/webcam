@@ -31,4 +31,6 @@ fun <T, E : Throwable> Single<T>.mapException(exceptionMapper: ExceptionMapper<E
 }
 
 fun <T> Single<T>.delayError(): Single<T> =
-  
+        this.retryWhen {
+            it.delay(DELAY_ERROR_MILLIS, TimeUnit.MILLISECONDS, Schedulers.computation())
+                    .flatMapSingle { error -> Si
