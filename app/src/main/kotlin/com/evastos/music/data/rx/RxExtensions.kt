@@ -40,3 +40,8 @@ fun <T> Single<T>.checkNetwork(connectivityProvider: NetworkConnectivityProvider
     return Single.just(connectivityProvider.isConnected())
             .flatMap { it ->
                 if (it) {
+                    this
+                } else {
+                    Single.error<T>(NetworkFailFastException())
+                }
+   
