@@ -44,4 +44,5 @@ fun <T> Single<T>.checkNetwork(connectivityProvider: NetworkConnectivityProvider
                 } else {
                     Single.error<T>(NetworkFailFastException())
                 }
-   
+            }
+}
