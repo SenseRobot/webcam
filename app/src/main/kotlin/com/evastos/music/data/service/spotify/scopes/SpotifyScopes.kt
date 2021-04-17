@@ -8,4 +8,5 @@ class SpotifyScopes : Scopes.Spotify {
         private const val SCOPE_USER_READ_PRIVATE = "user-read-private"
     }
 
-    overrid
+    override fun getScopes(): Array<String> {
+        return arrayOf(SCOPE_APP_REMOTE_CONTROL, SCOPE_USER_READ_EMAIL, SCOPE_USER_READ_
