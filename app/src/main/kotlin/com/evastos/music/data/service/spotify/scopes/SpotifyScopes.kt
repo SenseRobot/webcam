@@ -9,4 +9,6 @@ class SpotifyScopes : Scopes.Spotify {
     }
 
     override fun getScopes(): Array<String> {
-        return arrayOf(SCOPE_APP_REMOTE_CONTROL, SCOPE_USER_READ_EMAIL, SCOPE_USER_READ_
+        return arrayOf(SCOPE_APP_REMOTE_CONTROL, SCOPE_USER_READ_EMAIL, SCOPE_USER_READ_PRIVATE)
+    }
+}
