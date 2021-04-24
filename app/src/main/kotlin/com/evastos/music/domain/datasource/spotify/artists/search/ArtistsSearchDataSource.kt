@@ -9,4 +9,7 @@ import com.evastos.music.data.model.spotify.item.artist.Artist
 import com.evastos.music.data.model.spotify.search.SearchResponse
 import com.evastos.music.data.network.connectivity.NetworkConnectivityProvider
 import com.evastos.music.data.rx.applySchedulers
-import com.evastos.music.data.r
+import com.evastos.music.data.rx.checkNetwork
+import com.evastos.music.data.rx.delayError
+import com.evastos.music.data.rx.mapException
+import com.evastos.music.data.service.spo
