@@ -12,4 +12,6 @@ import com.evastos.music.data.rx.applySchedulers
 import com.evastos.music.data.rx.checkNetwork
 import com.evastos.music.data.rx.delayError
 import com.evastos.music.data.rx.mapException
-import com.evastos.music.data.service.spo
+import com.evastos.music.data.service.spotify.SpotifyService
+import com.evastos.music.domain.exception.ExceptionMessageProviders
+import com.evastos.music.doma
