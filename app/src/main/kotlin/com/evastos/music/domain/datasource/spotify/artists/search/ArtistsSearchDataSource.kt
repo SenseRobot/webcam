@@ -17,4 +17,8 @@ import com.evastos.music.domain.exception.ExceptionMessageProviders
 import com.evastos.music.domain.livedata.LoadingState
 import com.evastos.music.ui.util.extensions.formatQuery
 import io.reactivex.Single
-import io.reac
+import io.reactivex.disposables.CompositeDisposable
+
+class ArtistsSearchDataSource(
+    private val query: String,
+    private val spot
