@@ -21,4 +21,6 @@ import io.reactivex.disposables.CompositeDisposable
 
 class ArtistsSearchDataSource(
     private val query: String,
-    private val spot
+    private val spotifyService: SpotifyService,
+    private val exceptionMapper: ExceptionMappers.Spotify,
+    private val exceptionMessageProvider: Exceptio
