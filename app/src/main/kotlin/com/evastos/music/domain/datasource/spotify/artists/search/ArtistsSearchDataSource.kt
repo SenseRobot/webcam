@@ -30,4 +30,8 @@ class ArtistsSearchDataSource(
 
     companion object {
         private const val MARKET_FROM_TOKEN = "from_token"
-        
+        private const val PAGE_INITIAL = 0
+        private const val PAGE_SIZE = 20
+    }
+
+    // keep a function reference for the retry e
