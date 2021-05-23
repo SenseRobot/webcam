@@ -25,4 +25,9 @@ class ArtistsSearchDataSource(
     private val exceptionMapper: ExceptionMappers.Spotify,
     private val exceptionMessageProvider: ExceptionMessageProviders.Spotify,
     private val networkConnectivityProvider: NetworkConnectivityProvider,
-    private val disposables: CompositeDispos
+    private val disposables: CompositeDisposable
+) : PageKeyedDataSource<Int, Artist>() {
+
+    companion object {
+        private const val MARKET_FROM_TOKEN = "from_token"
+        
