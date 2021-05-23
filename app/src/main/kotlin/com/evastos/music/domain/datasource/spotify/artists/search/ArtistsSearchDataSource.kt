@@ -40,4 +40,11 @@ class ArtistsSearchDataSource(
     val loadingState = MutableLiveData<LoadingState>()
 
     fun retryAllFailed() {
-        val prevRetry = re
+        val prevRetry = retry
+        retry = null
+        prevRetry?.invoke()
+    }
+
+    override fun loadBefore(
+        params: LoadParams<Int>,
+       
