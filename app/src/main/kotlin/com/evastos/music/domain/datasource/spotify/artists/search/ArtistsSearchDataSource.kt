@@ -34,4 +34,10 @@ class ArtistsSearchDataSource(
         private const val PAGE_SIZE = 20
     }
 
-    // keep a function reference for the retry e
+    // keep a function reference for the retry event
+    private var retry: (() -> Any)? = null
+
+    val loadingState = MutableLiveData<LoadingState>()
+
+    fun retryAllFailed() {
+        val prevRetry = re
