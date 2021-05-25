@@ -47,4 +47,9 @@ class ArtistsSearchDataSource(
 
     override fun loadBefore(
         params: LoadParams<Int>,
-       
+        callback: LoadCallback<Int, Artist>
+    ) {
+        // ignored, since we only ever append to our initial load
+    }
+
+  
