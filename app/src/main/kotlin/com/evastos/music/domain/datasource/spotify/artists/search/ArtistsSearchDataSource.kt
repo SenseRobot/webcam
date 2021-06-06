@@ -54,4 +54,7 @@ class ArtistsSearchDataSource(
 
     override fun loadAfter(params: LoadParams<Int>, callback: LoadCallback<Int, Artist>) {
         disposables.add(
-            searchArtists(para
+            searchArtists(params.key)
+                    .subscribe({ response ->
+                        val artists = response.artists?.items ?: emptyList()
+            
