@@ -52,4 +52,6 @@ class ArtistsSearchDataSource(
         // ignored, since we only ever append to our initial load
     }
 
-  
+    override fun loadAfter(params: LoadParams<Int>, callback: LoadCallback<Int, Artist>) {
+        disposables.add(
+            searchArtists(para
