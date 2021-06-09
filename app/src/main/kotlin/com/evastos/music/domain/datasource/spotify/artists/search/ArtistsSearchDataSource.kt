@@ -57,4 +57,6 @@ class ArtistsSearchDataSource(
             searchArtists(params.key)
                     .subscribe({ response ->
                         val artists = response.artists?.items ?: emptyList()
-            
+                        retry = null
+                        loadingState.postValue(LoadingState.Success())
+                        callback.onResult(a
