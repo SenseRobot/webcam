@@ -59,4 +59,7 @@ class ArtistsSearchDataSource(
                         val artists = response.artists?.items ?: emptyList()
                         retry = null
                         loadingState.postValue(LoadingState.Success())
-                        callback.onResult(a
+                        callback.onResult(artists, getNextPage(params.key, response))
+                    }, {
+                        retry = {
+                            
