@@ -65,4 +65,7 @@ class ArtistsSearchDataSource(
                             loadAfter(params, callback)
                         }
                         loadingState.postValue(
-                          
+                            LoadingState.Error(exceptionMessageProvider.getMessage(it))
+                        )
+                    }
+                
