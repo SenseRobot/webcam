@@ -68,4 +68,10 @@ class ArtistsSearchDataSource(
                             LoadingState.Error(exceptionMessageProvider.getMessage(it))
                         )
                     }
-                
+                    )
+        )
+    }
+
+    override fun loadInitial(
+        params: LoadInitialParams<Int>,
+        callback: LoadInitialCallbac
