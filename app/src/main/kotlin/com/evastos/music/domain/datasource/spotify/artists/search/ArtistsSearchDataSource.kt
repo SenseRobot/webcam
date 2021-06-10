@@ -62,4 +62,7 @@ class ArtistsSearchDataSource(
                         callback.onResult(artists, getNextPage(params.key, response))
                     }, {
                         retry = {
-                            
+                            loadAfter(params, callback)
+                        }
+                        loadingState.postValue(
+                          
