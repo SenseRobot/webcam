@@ -74,4 +74,8 @@ class ArtistsSearchDataSource(
 
     override fun loadInitial(
         params: LoadInitialParams<Int>,
-        callback: LoadInitialCallbac
+        callback: LoadInitialCallback<Int, Artist>
+    ) {
+        disposables.add(
+            searchArtists(PAGE_INITIAL)
+                    .subscribe({ response ->
