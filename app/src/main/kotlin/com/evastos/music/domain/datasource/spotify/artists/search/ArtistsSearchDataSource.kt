@@ -79,3 +79,5 @@ class ArtistsSearchDataSource(
         disposables.add(
             searchArtists(PAGE_INITIAL)
                     .subscribe({ response ->
+                        val nextPage = getNextPage(PAGE_INITIAL, response)
+                        val previousPage = PAGE_INITIAL.min
