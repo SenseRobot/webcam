@@ -80,4 +80,7 @@ class ArtistsSearchDataSource(
             searchArtists(PAGE_INITIAL)
                     .subscribe({ response ->
                         val nextPage = getNextPage(PAGE_INITIAL, response)
-                        val previousPage = PAGE_INITIAL.min
+                        val previousPage = PAGE_INITIAL.minus(1)
+                        val artists = response.artists?.items ?: emptyList()
+                        retry = null
+              
