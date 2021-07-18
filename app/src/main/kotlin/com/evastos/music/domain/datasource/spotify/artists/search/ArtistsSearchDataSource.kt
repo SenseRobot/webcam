@@ -96,4 +96,7 @@ class ArtistsSearchDataSource(
         )
     }
 
-    private fun sear
+    private fun searchArtists(page: Int): Single<SearchResponse> =
+            spotifyService.search(
+                query = query.formatQuery(),
+           
