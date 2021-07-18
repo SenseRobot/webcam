@@ -88,4 +88,6 @@ class ArtistsSearchDataSource(
                     }, {
                         retry = {
                             loadInitial(params, callback)
-          
+                        }
+                        loadingState.postValue(
+                            LoadingState
