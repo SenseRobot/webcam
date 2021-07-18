@@ -85,4 +85,7 @@ class ArtistsSearchDataSource(
                         retry = null
                         loadingState.postValue(LoadingState.Success())
                         callback.onResult(artists, previousPage, nextPage)
-       
+                    }, {
+                        retry = {
+                            loadInitial(params, callback)
+          
