@@ -99,4 +99,7 @@ class ArtistsSearchDataSource(
     private fun searchArtists(page: Int): Single<SearchResponse> =
             spotifyService.search(
                 query = query.formatQuery(),
-           
+                types = ItemTypes().apply {
+                    add(ItemType.ARTIST)
+                },
+                m
