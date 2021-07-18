@@ -90,4 +90,10 @@ class ArtistsSearchDataSource(
                             loadInitial(params, callback)
                         }
                         loadingState.postValue(
-                            LoadingState
+                            LoadingState.Error(exceptionMessageProvider.getMessage(it))
+                        )
+                    })
+        )
+    }
+
+    private fun sear
