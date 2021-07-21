@@ -102,4 +102,8 @@ class ArtistsSearchDataSource(
                 types = ItemTypes().apply {
                     add(ItemType.ARTIST)
                 },
-                m
+                market = MARKET_FROM_TOKEN,
+                limit = PAGE_SIZE,
+                offset = page * PAGE_SIZE
+            )
+ 
