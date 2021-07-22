@@ -112,4 +112,8 @@ class ArtistsSearchDataSource(
                     .checkNetwork(networkConnectivityProvider)
                     .delayError()
                     .mapException(exceptionMapper)
-                 
+                    .applySchedulers()
+
+    private fun getNextPage(page: Int, response: SearchResponse): Int? {
+        val nextPageVal = page.plus(1)
+        
