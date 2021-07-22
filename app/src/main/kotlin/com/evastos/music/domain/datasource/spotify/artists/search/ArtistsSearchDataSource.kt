@@ -109,4 +109,7 @@ class ArtistsSearchDataSource(
                     .doOnSubscribe {
                         loadingState.postValue(LoadingState.Loading())
                     }
-                  
+                    .checkNetwork(networkConnectivityProvider)
+                    .delayError()
+                    .mapException(exceptionMapper)
+                 
