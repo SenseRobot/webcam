@@ -106,4 +106,7 @@ class ArtistsSearchDataSource(
                 limit = PAGE_SIZE,
                 offset = page * PAGE_SIZE
             )
- 
+                    .doOnSubscribe {
+                        loadingState.postValue(LoadingState.Loading())
+                    }
+                  
