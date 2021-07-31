@@ -118,4 +118,9 @@ class ArtistsSearchDataSource(
         val nextPageVal = page.plus(1)
         val totalPagesVal = (response.artists?.total ?: 0) / PAGE_SIZE + 1
         return if (nextPageVal <= totalPagesVal) {
-    
+            nextPageVal
+        } else {
+            null
+        }
+    }
+}
