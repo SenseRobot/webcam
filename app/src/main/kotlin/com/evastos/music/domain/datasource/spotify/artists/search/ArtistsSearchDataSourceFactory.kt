@@ -6,4 +6,8 @@ import com.evastos.music.data.exception.ExceptionMappers
 import com.evastos.music.data.model.spotify.item.artist.Artist
 import com.evastos.music.data.network.connectivity.NetworkConnectivityProvider
 import com.evastos.music.data.service.spotify.SpotifyService
-import com.evastos.music.domain
+import com.evastos.music.domain.exception.ExceptionMessageProviders
+import io.reactivex.disposables.CompositeDisposable
+
+/**
+ * A simple data source factory wh
