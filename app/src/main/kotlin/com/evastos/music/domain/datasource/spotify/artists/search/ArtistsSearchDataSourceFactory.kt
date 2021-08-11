@@ -10,4 +10,5 @@ import com.evastos.music.domain.exception.ExceptionMessageProviders
 import io.reactivex.disposables.CompositeDisposable
 
 /**
- * A simple data source factory wh
+ * A simple data source factory which also provides a way to observe the last created data source.
+ * This allows us to channel its loading request status e
