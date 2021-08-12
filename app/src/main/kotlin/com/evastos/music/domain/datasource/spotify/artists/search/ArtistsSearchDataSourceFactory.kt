@@ -11,4 +11,8 @@ import io.reactivex.disposables.CompositeDisposable
 
 /**
  * A simple data source factory which also provides a way to observe the last created data source.
- * This allows us to channel its loading request status e
+ * This allows us to channel its loading request status etc back to the UI. See the Listing creation
+ * in the Repository class.
+ */
+class ArtistsSearchDataSourceFactory(
+    private val query: String,
