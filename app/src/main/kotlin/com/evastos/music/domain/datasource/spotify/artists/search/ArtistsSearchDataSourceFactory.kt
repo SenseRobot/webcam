@@ -18,4 +18,6 @@ class ArtistsSearchDataSourceFactory(
     private val query: String,
     private val spotifyService: SpotifyService,
     private val exceptionMapper: ExceptionMappers.Spotify,
-    private val 
+    private val exceptionMessageProvider: ExceptionMessageProviders.Spotify,
+    private val networkConnectivityProvider: NetworkConnectivityProvider,
+    priva
