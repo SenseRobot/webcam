@@ -20,4 +20,7 @@ class ArtistsSearchDataSourceFactory(
     private val exceptionMapper: ExceptionMappers.Spotify,
     private val exceptionMessageProvider: ExceptionMessageProviders.Spotify,
     private val networkConnectivityProvider: NetworkConnectivityProvider,
-    priva
+    private val disposables: CompositeDisposable
+) : DataSource.Factory<Int, Artist>() {
+
+    val artistsSearchSourceLiveData = MutableLi
