@@ -23,4 +23,8 @@ class ArtistsSearchDataSourceFactory(
     private val disposables: CompositeDisposable
 ) : DataSource.Factory<Int, Artist>() {
 
-    val artistsSearchSourceLiveData = MutableLi
+    val artistsSearchSourceLiveData = MutableLiveData<ArtistsSearchDataSource>()
+
+    override fun create(): DataSource<Int, Artist> {
+        val source = ArtistsSearchDataSource(
+  
