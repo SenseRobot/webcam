@@ -27,4 +27,8 @@ class ArtistsSearchDataSourceFactory(
 
     override fun create(): DataSource<Int, Artist> {
         val source = ArtistsSearchDataSource(
-  
+            query,
+            spotifyService,
+            exceptionMapper,
+            exceptionMessageProvider,
+            networkConnectivit
