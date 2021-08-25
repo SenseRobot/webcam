@@ -31,4 +31,10 @@ class ArtistsSearchDataSourceFactory(
             spotifyService,
             exceptionMapper,
             exceptionMessageProvider,
-            networkConnectivit
+            networkConnectivityProvider,
+            disposables
+        )
+        artistsSearchSourceLiveData.postValue(source)
+        return source
+    }
+}
