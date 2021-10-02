@@ -4,4 +4,7 @@ import com.evastos.music.data.exception.spotify.SpotifyException
 
 interface ExceptionMessageProviders {
 
-    interface Spotify : Excep
+    interface Spotify : ExceptionMessageProvider<SpotifyException> {
+        val authErrorMessage: String
+    }
+}
