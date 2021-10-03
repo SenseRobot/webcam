@@ -12,4 +12,6 @@ class SpotifyExceptionMessageProvider
 
     override fun getMessage(exception: SpotifyException): String? {
         return when (exception) {
-            is SpotifyException.ClientExce
+            is SpotifyException.ClientException ->
+                context.getString(R.string.error_client)
+            is SpotifyException.ServerException -
