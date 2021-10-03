@@ -8,4 +8,8 @@ import com.evastos.music.inject.qualifier.AppContext
 import javax.inject.Inject
 
 class SpotifyExceptionMessageProvider
-@Inject constructor(@AppContext private val context: Context) : ExceptionMessageProviders.Spoti
+@Inject constructor(@AppContext private val context: Context) : ExceptionMessageProviders.Spotify {
+
+    override fun getMessage(exception: SpotifyException): String? {
+        return when (exception) {
+            is SpotifyException.ClientExce
