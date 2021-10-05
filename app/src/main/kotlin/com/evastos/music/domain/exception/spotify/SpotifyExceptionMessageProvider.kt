@@ -14,4 +14,6 @@ class SpotifyExceptionMessageProvider
         return when (exception) {
             is SpotifyException.ClientException ->
                 context.getString(R.string.error_client)
-            is SpotifyException.ServerException -
+            is SpotifyException.ServerException ->
+                context.getString(R.string.error_server_unavailable)
+            is SpotifyException.NetworkExce
