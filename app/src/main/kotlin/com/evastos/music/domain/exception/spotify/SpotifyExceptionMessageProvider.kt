@@ -16,4 +16,6 @@ class SpotifyExceptionMessageProvider
                 context.getString(R.string.error_client)
             is SpotifyException.ServerException ->
                 context.getString(R.string.error_server_unavailable)
-            is SpotifyException.NetworkExce
+            is SpotifyException.NetworkException ->
+                context.getString(R.string.error_network)
+            is SpotifyException.NetworkFailFastException -> n
