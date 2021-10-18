@@ -23,4 +23,6 @@ class SpotifyExceptionMessageProvider
         }
     }
 
-    override fun getMessage(th
+    override fun getMessage(throwable: Throwable): String? {
+        if (throwable is SpotifyException) {
+            return getMessage(thro
