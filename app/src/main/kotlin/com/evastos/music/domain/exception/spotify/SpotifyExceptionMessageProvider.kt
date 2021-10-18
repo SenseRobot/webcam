@@ -18,4 +18,9 @@ class SpotifyExceptionMessageProvider
                 context.getString(R.string.error_server_unavailable)
             is SpotifyException.NetworkException ->
                 context.getString(R.string.error_network)
-            is SpotifyException.NetworkFailFastException -> n
+            is SpotifyException.NetworkFailFastException -> null
+            else -> context.getString(R.string.error_general)
+        }
+    }
+
+    override fun getMessage(th
