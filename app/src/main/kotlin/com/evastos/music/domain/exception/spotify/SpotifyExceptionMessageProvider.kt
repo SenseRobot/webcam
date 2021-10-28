@@ -25,4 +25,9 @@ class SpotifyExceptionMessageProvider
 
     override fun getMessage(throwable: Throwable): String? {
         if (throwable is SpotifyException) {
-            return getMessage(thro
+            return getMessage(throwable)
+        }
+        return context.getString(R.string.error_general)
+    }
+
+    override val authErrorMessage: String = con
