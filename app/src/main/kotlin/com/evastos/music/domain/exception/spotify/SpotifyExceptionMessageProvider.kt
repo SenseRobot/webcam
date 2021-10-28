@@ -30,4 +30,5 @@ class SpotifyExceptionMessageProvider
         return context.getString(R.string.error_general)
     }
 
-    override val authErrorMessage: String = con
+    override val authErrorMessage: String = context.getString(R.string.error_auth_spotify)
+}
