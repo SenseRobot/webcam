@@ -16,4 +16,8 @@
 
 package com.evastos.music.domain.livedata
 
-import android.arch.lifecycle.LiveDat
+import android.arch.lifecycle.LiveData
+import android.arch.paging.PagedList
+
+/**
+ * Data class that is necessary for a UI to show a listing and interact w/ the rest of the
