@@ -24,4 +24,7 @@ import android.arch.paging.PagedList
  */
 data class Listing<T>(
     // the LiveData of paged lists for the UI to observe
-    val pagedList: LiveData<PagedList<T
+    val pagedList: LiveData<PagedList<T>>,
+    // represents the loading status to show to the user
+    val loadingState: LiveData<LoadingState>,
+    
