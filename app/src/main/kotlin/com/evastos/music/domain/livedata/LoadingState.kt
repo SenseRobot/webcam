@@ -6,4 +6,5 @@ package com.evastos.music.domain.livedata
 sealed class LoadingState {
     class Loading : LoadingState()
     class Success : LoadingState()
-    class Error(val errorMessage: S
+    class Error(val errorMessage: String?) : LoadingState()
+}
