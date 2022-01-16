@@ -21,4 +21,8 @@ import android.arch.lifecycle.MutableLiveData
 import android.arch.lifecycle.Observer
 import android.support.annotation.MainThread
 import timber.log.Timber
-import java.util.concurrent.atomic.A
+import java.util.concurrent.atomic.AtomicBoolean
+
+/**
+ * A lifecycle-aware observable that sends only new updates after subscription, used for events like
+ * navigation and
