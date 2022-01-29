@@ -54,4 +54,11 @@ class SingleLiveEvent<T> : MutableLiveData<T>() {
         })
     }
 
-    @Mai
+    @MainThread
+    override fun setValue(t: T?) {
+        pending.set(true)
+        super.setValue(t)
+    }
+
+    /**
+     * Used for case
