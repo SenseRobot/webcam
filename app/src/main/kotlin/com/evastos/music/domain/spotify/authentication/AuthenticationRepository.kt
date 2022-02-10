@@ -50,3 +50,81 @@ class AuthenticationRepository
             userLiveEvent.postValue(preferenceStore.user)
         }
     }
+
+    private fun authenticate() {
+        clearAuthData()
+        authRequestLiveEvent.postValue(getAuthRequest(Type.TOKEN))
+    }
+
+    override fun handleAuthResponse(
+        authResponse: AuthenticationResponse,
+        disposables: CompositeDisposable
+    ) {
+        when (authResponse.type) {
+            Type.TOKEN -> {
+                preferenceStore.authData = AuthData(
+                    authToken = authResponse.accessToken,
+                    authTokenExpiresIn = authResponse.expiresIn * SEC_IN_MILLIS,
+                    authTokenRefreshedAt = dateTimeUtil.getNow()
+                )
+                getUser(disposables)
+            }
+            Type.CODE -> Timber.d("AuthResponse type is code")
+            Type.ERROR -> {
+                authErrorLiveData.postValue(spotifyExceptionMessageProvider.authErrorMessage)
+            }
+            Type.EMPTY -> {
+                Timber.d("AuthResponse type is empty")
+                authenticate()
+            }
+            Type.UNKNOWN -> {
+                Timber.d("AuthResponse type is unknown")
+                authenticate()
+            }
+            null -> {
+                Timber.d("AuthResponse type is null")
+                authenticate()
+            }
+        }
+    }
+
+    private fun getUser(disposables: CompositeDisposable) {
+        disposables.clear()
+        disposables.add(
+            spotifyService.getUser()
+                    .mapException(spotifyExceptionMapper)
+                    .applySchedulers()
+                    .subscribe({
+                        preferenceStore.user = it
+                        userLiveEvent.postValue(it)
+                    }, {
+                        val errorMessage = spotifyExceptionMessageProvider.getMessage(it)
+                        authErrorLiveData.postValue(errorMessage)
+                    }))
+    }
+
+    private fun getAuthRequest(type: AuthenticationResponse.Type): AuthenticationRequest =
+            AuthenticationRequest.Builder(
+                BuildConfig.SPOTIFY_CLIENT_ID,
+                type,
+                spotifyRedirectUri
+            )
+                    .setShowDialog(false)
+                    .setScopes(spotifyScopes.getScopes())
+                    .build()
+
+    private fun isTokenExpired(): Boolean {
+        preferenceStore.authData?.let {
+            val now = dateTimeUtil.getNow()
+            val timePassedMillis = now - it.authTokenRefreshedAt
+            if (timePassedMillis < it.authTokenExpiresIn)
+                return false
+        }
+        return true
+    }
+
+    private fun clearAuthData() {
+        preferenceStore.authData = null
+        preferenceStore.user = null
+    }
+}
