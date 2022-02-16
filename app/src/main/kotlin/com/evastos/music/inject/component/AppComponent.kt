@@ -8,4 +8,6 @@ import com.evastos.music.inject.module.NetworkModule
 import com.evastos.music.inject.module.PersistenceModule
 import com.evastos.music.inject.module.ReceiverBuilder
 import com.evastos.music.inject.module.RepositoryModule
-import com.eva
+import com.evastos.music.inject.module.SpotifyModule
+import com.evastos.music.inject.module.UtilModule
+import com.evastos.music.
