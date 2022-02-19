@@ -10,4 +10,7 @@ import com.evastos.music.inject.module.ReceiverBuilder
 import com.evastos.music.inject.module.RepositoryModule
 import com.evastos.music.inject.module.SpotifyModule
 import com.evastos.music.inject.module.UtilModule
-import com.evastos.music.
+import com.evastos.music.inject.module.ViewModelModule
+import dagger.Component
+import dagger.android.AndroidInjector
+import dagger.android.support.
