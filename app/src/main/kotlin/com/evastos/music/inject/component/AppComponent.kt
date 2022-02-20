@@ -13,4 +13,10 @@ import com.evastos.music.inject.module.UtilModule
 import com.evastos.music.inject.module.ViewModelModule
 import dagger.Component
 import dagger.android.AndroidInjector
-import dagger.android.support.
+import dagger.android.support.AndroidSupportInjectionModule
+import javax.inject.Singleton
+
+@Suppress("unused")
+@Singleton
+@Component(modules = [
+    AndroidSupportInjectio
