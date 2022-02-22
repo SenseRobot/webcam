@@ -19,4 +19,9 @@ import javax.inject.Singleton
 @Suppress("unused")
 @Singleton
 @Component(modules = [
-    AndroidSupportInjectio
+    AndroidSupportInjectionModule::class,
+    ActivityBuilder::class,
+    ReceiverBuilder::class,
+    AppModule::class,
+    SpotifyModule::class,
+    RepositoryModule::class,
