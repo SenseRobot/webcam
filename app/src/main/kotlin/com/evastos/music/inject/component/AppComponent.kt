@@ -25,3 +25,8 @@ import javax.inject.Singleton
     AppModule::class,
     SpotifyModule::class,
     RepositoryModule::class,
+    PersistenceModule::class,
+    NetworkModule::class,
+    ExceptionModule::class,
+    UtilModule::class,
+    ViewModelModule::clas
