@@ -29,4 +29,6 @@ import javax.inject.Singleton
     NetworkModule::class,
     ExceptionModule::class,
     UtilModule::class,
-    ViewModelModule::clas
+    ViewModelModule::class
+])
+interface AppComponent : AndroidInjector<MusicApp>
