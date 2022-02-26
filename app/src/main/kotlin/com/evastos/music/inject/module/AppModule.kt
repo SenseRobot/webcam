@@ -13,4 +13,5 @@ class AppModule {
     @Singleton
     @Provides
     @AppContext
-    fun provideA
+    fun provideAppContext(): Context = MusicApp.instance
+}
