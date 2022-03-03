@@ -5,4 +5,4 @@ import com.bumptech.glide.module.AppGlideModule
 
 // new since Glide v4
 @GlideModule
-class MusicGlideModu
+class MusicGlideModule : AppGlideModule()
