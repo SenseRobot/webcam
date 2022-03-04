@@ -14,4 +14,6 @@ class PersistenceModule {
 
     @Provides
     @Singleton
-    fun providePreferenceStore(@AppConte
+    fun providePreferenceStore(@AppContext context: Context): PreferenceStore =
+            SharedPreferenceStore(context)
+}
