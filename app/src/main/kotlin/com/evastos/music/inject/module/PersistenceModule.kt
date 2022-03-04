@@ -6,4 +6,12 @@ import com.evastos.music.data.persistence.prefs.SharedPreferenceStore
 import com.evastos.music.inject.qualifier.AppContext
 import dagger.Module
 import dagger.Provides
-import javax.inject
+import javax.inject.Singleton
+
+@Suppress("unused")
+@Module
+class PersistenceModule {
+
+    @Provides
+    @Singleton
+    fun providePreferenceStore(@AppConte
