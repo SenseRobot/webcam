@@ -9,4 +9,5 @@ import dagger.android.ContributesAndroidInjector
 abstract class ReceiverBuilder {
 
     @ContributesAndroidInjector
-    internal abstract fun bindNetwor
+    internal abstract fun bindNetworkConnectivityReceiver(): NetworkConnectivityReceiver
+}
