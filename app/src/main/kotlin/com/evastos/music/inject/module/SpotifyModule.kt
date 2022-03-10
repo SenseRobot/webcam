@@ -50,3 +50,9 @@ class SpotifyModule {
     @SpotifyRedirectUri
     fun provideRedirectUri(): String {
         return Uri.Builder()
+                .scheme(BuildConfig.SPOTIFY_REDIRECT_SCHEME)
+                .authority(BuildConfig.SPOTIFY_REDIRECT_HOST)
+                .build()
+                .toString()
+    }
+}
