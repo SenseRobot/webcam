@@ -11,4 +11,7 @@ class UtilModule {
 
     @Provides
     @Singleton
-  
+    fun provideDateTimeUtil(): DateTimeUtil {
+        return DateTimeUtil()
+    }
+}
