@@ -5,4 +5,7 @@ import android.arch.lifecycle.ViewModelProvider
 import com.evastos.music.inject.qualifier.ViewModelKey
 import com.evastos.music.inject.viewmodel.ViewModelFactory
 import com.evastos.music.ui.spotify.artists.ArtistsViewModel
-import com.evastos.music.ui.spotify.artists.
+import com.evastos.music.ui.spotify.artists.details.ArtistDetailsViewModel
+import com.evastos.music.ui.spotify.authentication.AuthenticationViewModel
+import dagger.Binds
+imp
