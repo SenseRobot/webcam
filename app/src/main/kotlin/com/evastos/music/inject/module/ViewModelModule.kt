@@ -8,4 +8,12 @@ import com.evastos.music.ui.spotify.artists.ArtistsViewModel
 import com.evastos.music.ui.spotify.artists.details.ArtistDetailsViewModel
 import com.evastos.music.ui.spotify.authentication.AuthenticationViewModel
 import dagger.Binds
-imp
+import dagger.Module
+import dagger.multibindings.IntoMap
+
+@Suppress("unused")
+@Module
+abstract class ViewModelModule {
+
+    @Binds
+    @
