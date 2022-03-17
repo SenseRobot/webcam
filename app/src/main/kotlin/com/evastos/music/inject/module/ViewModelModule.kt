@@ -19,4 +19,10 @@ abstract class ViewModelModule {
     @IntoMap
     @ViewModelKey(AuthenticationViewModel::class)
     abstract fun bindAuthenticationViewModel(
-        authenticationViewModel
+        authenticationViewModel: AuthenticationViewModel
+    ): ViewModel
+
+    @Binds
+    @IntoMap
+    @ViewModelKey(ArtistsViewModel::class)
+    abstract fun bindAr
