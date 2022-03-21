@@ -31,4 +31,6 @@ abstract class ViewModelModule {
 
     @Binds
     @IntoMap
-    @ViewModelKey(ArtistD
+    @ViewModelKey(ArtistDetailsViewModel::class)
+    abstract fun bindArtistDetailsViewModel(
+        artistsDetailsViewModel: ArtistDetailsV
