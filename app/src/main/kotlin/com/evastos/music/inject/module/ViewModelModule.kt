@@ -33,4 +33,9 @@ abstract class ViewModelModule {
     @IntoMap
     @ViewModelKey(ArtistDetailsViewModel::class)
     abstract fun bindArtistDetailsViewModel(
-        artistsDetailsViewModel: ArtistDetailsV
+        artistsDetailsViewModel: ArtistDetailsViewModel
+    ): ViewModel
+
+    @Binds
+    abstract fun bindViewModelFactory(factory: ViewModelFactory): ViewModelProvider.Factory
+}
