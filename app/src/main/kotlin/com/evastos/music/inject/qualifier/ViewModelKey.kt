@@ -12,4 +12,4 @@ import kotlin.reflect.KClass
 )
 @Retention(AnnotationRetention.RUNTIME)
 @MapKey
-ann
+annotation class ViewModelKey(val value: KClass<out ViewModel>)
