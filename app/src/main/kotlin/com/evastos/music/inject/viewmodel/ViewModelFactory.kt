@@ -19,4 +19,7 @@ open class ViewModelFactory
             @Suppress("UNCHECKED_CAST")
             return creator.get() as T
         } catch (e: Exception) {
-            throw RuntimeExcep
+            throw RuntimeException(e)
+        }
+    }
+}
