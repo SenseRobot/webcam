@@ -13,4 +13,7 @@ open class ViewModelFactory
 ) : ViewModelProvider.Factory {
     override fun <T : ViewModel> create(modelClass: Class<T>): T {
         val creator = creators[modelClass] ?: creators.entries.firstOrNull { entry ->
-            model
+            modelClass.isAssignableFrom(entry.key)
+        }?.value ?: throw IllegalArgumentException("unknown model class $modelClass")
+        try {
+            
