@@ -8,4 +8,9 @@ import io.reactivex.disposables.CompositeDisposable
 
 abstract class BaseViewModel : ViewModel() {
 
-    protected val di
+    protected val disposables = CompositeDisposable()
+
+    val networkConnectivityBannerLiveData = MutableLiveData<Boolean>()
+
+    override fun onCleared() {
+     
