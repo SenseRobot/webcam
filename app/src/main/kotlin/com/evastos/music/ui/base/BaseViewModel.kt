@@ -13,4 +13,9 @@ abstract class BaseViewModel : ViewModel() {
     val networkConnectivityBannerLiveData = MutableLiveData<Boolean>()
 
     override fun onCleared() {
-     
+        disposables.clear()
+        super.onCleared()
+    }
+
+    open fun onCreate(
+        networkConnectivityObservable: Observable<Bool
