@@ -22,4 +22,7 @@ abstract class BaseViewModel : ViewModel() {
         onConnectivityChange: (Boolean) -> Unit
     ) {
         networkConnectivityObservable?.let {
-          
+            disposables.add(it
+                    .distinctUntilChanged()
+                    .applySchedulers()
+                    .subscr
