@@ -25,4 +25,10 @@ abstract class BaseViewModel : ViewModel() {
             disposables.add(it
                     .distinctUntilChanged()
                     .applySchedulers()
-                    .subscr
+                    .subscribe { isConnected ->
+                        onConnectivityChange(isConnected)
+                    }
+            )
+        }
+    }
+}
