@@ -18,4 +18,8 @@ abstract class BaseViewModel : ViewModel() {
     }
 
     open fun onCreate(
-        networkConnectivityObservable: Observable<Bool
+        networkConnectivityObservable: Observable<Boolean>?,
+        onConnectivityChange: (Boolean) -> Unit
+    ) {
+        networkConnectivityObservable?.let {
+          
