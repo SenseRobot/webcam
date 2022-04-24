@@ -133,3 +133,45 @@ class ArtistsActivity : BaseActivity() {
 
         searchView = searchItem.actionView as? SearchView
         searchView?.apply {
+            suggestionsAdapter = artistSuggestionsAdapter
+
+            setOnSuggestionListener(object : SearchView.OnSuggestionListener {
+                override fun onSuggestionSelect(position: Int): Boolean {
+                    return false
+                }
+
+                override fun onSuggestionClick(position: Int): Boolean {
+                    artistSuggestionsAdapter.getArtistName(position)?.let { movieTitle ->
+                        setQuery(movieTitle, false)
+                        clearFocus()
+                        viewModel.onSearchQuerySubmit(movieTitle)
+                        return true
+                    }
+                    return false
+                }
+            })
+
+            setOnQueryTextListener(object : SearchView.OnQueryTextListener {
+                override fun onQueryTextSubmit(query: String?): Boolean {
+                    query?.let {
+                        clearFocus()
+                        if (!it.isEmpty()) {
+                            viewModel.onSearchQuerySubmit(it)
+                        }
+                    }
+                    return true
+                }
+
+                override fun onQueryTextChange(query: String?): Boolean {
+                    query?.let {
+                        if (!it.isEmpty()) {
+                            viewModel.onSearchQueryChange(it)
+                        }
+                    }
+                    return true
+                }
+            })
+        }
+        return true
+    }
+}
