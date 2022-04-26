@@ -8,4 +8,9 @@ import com.evastos.music.domain.Repositories
 import com.evastos.music.domain.livedata.Listing
 import com.evastos.music.domain.livedata.LoadingState
 import com.evastos.music.domain.livedata.SingleLiveEvent
-import com.evast
+import com.evastos.music.ui.base.BaseViewModel
+import io.reactivex.Observable
+import javax.inject.Inject
+
+class ArtistsViewModel
+@Inject con
