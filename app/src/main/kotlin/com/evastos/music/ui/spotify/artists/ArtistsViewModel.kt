@@ -6,4 +6,6 @@ import android.arch.paging.PagedList
 import com.evastos.music.data.model.spotify.item.artist.Artist
 import com.evastos.music.domain.Repositories
 import com.evastos.music.domain.livedata.Listing
-import com.eva
+import com.evastos.music.domain.livedata.LoadingState
+import com.evastos.music.domain.livedata.SingleLiveEvent
+import com.evast
