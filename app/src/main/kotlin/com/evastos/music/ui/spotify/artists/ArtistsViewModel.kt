@@ -13,4 +13,9 @@ import io.reactivex.Observable
 import javax.inject.Inject
 
 class ArtistsViewModel
-@Inject con
+@Inject constructor(
+    private val repository: Repositories.Spotify.Artists
+) : BaseViewModel() {
+
+    // ARTISTS
+    val artistsLiveData = MediatorLiveData<Pa
