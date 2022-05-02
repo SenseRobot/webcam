@@ -18,4 +18,9 @@ class ArtistsViewModel
 ) : BaseViewModel() {
 
     // ARTISTS
-    val artistsLiveData = MediatorLiveData<Pa
+    val artistsLiveData = MediatorLiveData<PagedList<Artist>>()
+
+    // LOADING STATE
+    val loadingStateLiveData = MediatorLiveData<LoadingState>()
+
+    // ARTIST SUG
