@@ -23,4 +23,8 @@ class ArtistsViewModel
     // LOADING STATE
     val loadingStateLiveData = MediatorLiveData<LoadingState>()
 
-    // ARTIST SUG
+    // ARTIST SUGGESTIONS
+    val artistSuggestionsLiveData = MediatorLiveData<List<Artist>>()
+
+    // ARTIST DETAILS
+    val ar
