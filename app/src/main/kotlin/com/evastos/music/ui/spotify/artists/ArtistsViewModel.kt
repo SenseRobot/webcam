@@ -27,4 +27,7 @@ class ArtistsViewModel
     val artistSuggestionsLiveData = MediatorLiveData<List<Artist>>()
 
     // ARTIST DETAILS
-    val ar
+    val artistDetailsLiveData = SingleLiveEvent<Artist>()
+
+    // ARTIST SEARCH NAME
+    val artistSearchLiveData = repository.artist
