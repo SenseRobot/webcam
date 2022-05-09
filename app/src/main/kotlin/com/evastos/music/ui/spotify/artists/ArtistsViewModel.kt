@@ -30,4 +30,7 @@ class ArtistsViewModel
     val artistDetailsLiveData = SingleLiveEvent<Artist>()
 
     // ARTIST SEARCH NAME
-    val artistSearchLiveData = repository.artist
+    val artistSearchLiveData = repository.artistSearchLiveData
+
+    private val initialArtistsListing: Listing<Artist> =
+            repository.searchArtists(disp
