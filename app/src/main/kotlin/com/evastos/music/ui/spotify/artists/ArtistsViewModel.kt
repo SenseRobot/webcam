@@ -33,4 +33,6 @@ class ArtistsViewModel
     val artistSearchLiveData = repository.artistSearchLiveData
 
     private val initialArtistsListing: Listing<Artist> =
-            repository.searchArtists(disp
+            repository.searchArtists(disposables = disposables)
+    private var searchArtistsListing: Listing<Artist>? = null
+    private var suggestionsLiveData: LiveDa
