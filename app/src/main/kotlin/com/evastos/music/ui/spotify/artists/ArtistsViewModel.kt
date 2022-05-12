@@ -35,4 +35,7 @@ class ArtistsViewModel
     private val initialArtistsListing: Listing<Artist> =
             repository.searchArtists(disposables = disposables)
     private var searchArtistsListing: Listing<Artist>? = null
-    private var suggestionsLiveData: LiveDa
+    private var suggestionsLiveData: LiveData<List<Artist>>? = null
+
+    private var retrySearchArtists: () -> Unit = initialArtistsListing.retry
+    private var refreshSea
