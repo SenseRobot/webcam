@@ -38,4 +38,8 @@ class ArtistsViewModel
     private var suggestionsLiveData: LiveData<List<Artist>>? = null
 
     private var retrySearchArtists: () -> Unit = initialArtistsListing.retry
-    private var refreshSea
+    private var refreshSearchArtists: () -> Unit = initialArtistsListing.refresh
+
+    init {
+        artistsLiveData.addSource(initialArtistsListing.pagedList) {
+     
