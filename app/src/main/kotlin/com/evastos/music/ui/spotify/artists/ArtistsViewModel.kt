@@ -50,4 +50,5 @@ class ArtistsViewModel
     }
 
     fun onCreate(networkConnectivityObservable: Observable<Boolean>?) {
-    
+        super.onCreate(networkConnectivityObservable) { isConnected ->
+            networkConnectivityBannerLiveData.postValue(isConnect
