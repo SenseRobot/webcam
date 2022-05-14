@@ -44,4 +44,10 @@ class ArtistsViewModel
         artistsLiveData.addSource(initialArtistsListing.pagedList) {
             artistsLiveData.value = it
         }
-        loadingStateLiveData.addSource(initialArtistsListing.loadingState)
+        loadingStateLiveData.addSource(initialArtistsListing.loadingState) {
+            loadingStateLiveData.value = it
+        }
+    }
+
+    fun onCreate(networkConnectivityObservable: Observable<Boolean>?) {
+    
