@@ -51,4 +51,12 @@ class ArtistsViewModel
 
     fun onCreate(networkConnectivityObservable: Observable<Boolean>?) {
         super.onCreate(networkConnectivityObservable) { isConnected ->
-            networkConnectivityBannerLiveData.postValue(isConnect
+            networkConnectivityBannerLiveData.postValue(isConnected.not())
+            if (isConnected) {
+                retrySearchArtists.invoke()
+            }
+        }
+    }
+
+    fun onRetry() {
+        
