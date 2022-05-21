@@ -66,4 +66,6 @@ class ArtistsViewModel
         refreshSearchArtists.invoke()
     }
 
-    fun onSearchQuerySubmit(quer
+    fun onSearchQuerySubmit(query: String) {
+        artistSuggestionsLiveData.postValue(null)
+        searchArtistsListing = repository.searchArtists(query, 
