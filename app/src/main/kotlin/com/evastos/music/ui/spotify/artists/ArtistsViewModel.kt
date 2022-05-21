@@ -59,4 +59,11 @@ class ArtistsViewModel
     }
 
     fun onRetry() {
-        
+        retrySearchArtists.invoke()
+    }
+
+    fun onRefresh() {
+        refreshSearchArtists.invoke()
+    }
+
+    fun onSearchQuerySubmit(quer
