@@ -68,4 +68,7 @@ class ArtistsViewModel
 
     fun onSearchQuerySubmit(query: String) {
         artistSuggestionsLiveData.postValue(null)
-        searchArtistsListing = repository.searchArtists(query, 
+        searchArtistsListing = repository.searchArtists(query, disposables)
+                .apply {
+                    artistsLiveData.removeSource(initialArtistsListing.pagedList)
+           
