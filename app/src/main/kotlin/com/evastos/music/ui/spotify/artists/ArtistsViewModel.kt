@@ -71,4 +71,6 @@ class ArtistsViewModel
         searchArtistsListing = repository.searchArtists(query, disposables)
                 .apply {
                     artistsLiveData.removeSource(initialArtistsListing.pagedList)
-           
+                    artistsLiveData.addSource(this.pagedList) {
+                        artistsLiveData.value = it
+                   
