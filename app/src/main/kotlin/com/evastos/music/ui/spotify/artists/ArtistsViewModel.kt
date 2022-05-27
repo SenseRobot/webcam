@@ -73,4 +73,6 @@ class ArtistsViewModel
                     artistsLiveData.removeSource(initialArtistsListing.pagedList)
                     artistsLiveData.addSource(this.pagedList) {
                         artistsLiveData.value = it
-                   
+                    }
+                    loadingStateLiveData.removeSource(initialArtistsListing.loadingState)
+                    loadingStateLiveData.addSource(this.lo
