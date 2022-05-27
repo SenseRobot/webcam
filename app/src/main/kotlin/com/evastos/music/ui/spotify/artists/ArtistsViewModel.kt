@@ -78,4 +78,10 @@ class ArtistsViewModel
                     loadingStateLiveData.addSource(this.loadingState) {
                         loadingStateLiveData.value = it
                     }
-                    retrySearchArtists = t
+                    retrySearchArtists = this.retry
+                    refreshSearchArtists = this.refresh
+                }
+    }
+
+    fun onSearchQueryChange(query: String) {
+     
