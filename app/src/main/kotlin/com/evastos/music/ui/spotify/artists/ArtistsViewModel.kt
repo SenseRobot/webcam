@@ -84,4 +84,7 @@ class ArtistsViewModel
     }
 
     fun onSearchQueryChange(query: String) {
-     
+        suggestionsLiveData?.let {
+            artistSuggestionsLiveData.removeSource(it)
+        }
+        sug
