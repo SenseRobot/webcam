@@ -75,4 +75,7 @@ class ArtistsViewModel
                         artistsLiveData.value = it
                     }
                     loadingStateLiveData.removeSource(initialArtistsListing.loadingState)
-                    loadingStateLiveData.addSource(this.lo
+                    loadingStateLiveData.addSource(this.loadingState) {
+                        loadingStateLiveData.value = it
+                    }
+                    retrySearchArtists = t
