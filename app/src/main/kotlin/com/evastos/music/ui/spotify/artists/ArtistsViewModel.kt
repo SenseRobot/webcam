@@ -92,4 +92,10 @@ class ArtistsViewModel
                     artistSuggestionsLiveData.addSource(this) {
                         artistSuggestionsLiveData.value = it
                     }
-              
+                }
+    }
+
+    fun onArtistClick(artist: Artist?) {
+        artistDetailsLiveData.postValue(artist)
+    }
+}
