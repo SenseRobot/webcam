@@ -89,4 +89,7 @@ class ArtistsViewModel
         }
         suggestionsLiveData = repository.getArtistSuggestions(query, disposables)
                 .apply {
-                    artistSuggestionsLi
+                    artistSuggestionsLiveData.addSource(this) {
+                        artistSuggestionsLiveData.value = it
+                    }
+              
