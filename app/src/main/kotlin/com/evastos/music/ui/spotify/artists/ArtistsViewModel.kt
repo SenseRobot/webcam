@@ -87,4 +87,6 @@ class ArtistsViewModel
         suggestionsLiveData?.let {
             artistSuggestionsLiveData.removeSource(it)
         }
-        sug
+        suggestionsLiveData = repository.getArtistSuggestions(query, disposables)
+                .apply {
+                    artistSuggestionsLi
