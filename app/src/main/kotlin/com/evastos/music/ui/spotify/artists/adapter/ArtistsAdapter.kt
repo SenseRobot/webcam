@@ -9,4 +9,6 @@ import com.evastos.music.data.model.spotify.item.artist.Artist
 import com.evastos.music.inject.module.GlideRequests
 import com.evastos.music.ui.util.extensions.debounceClicks
 import com.evastos.music.ui.util.extensions.inflate
-import com.evasto
+import com.evastos.music.ui.util.extensions.loadImage
+import com.evastos.music.ui.util.extensions.setGone
+import com.evastos.music.ui.util
