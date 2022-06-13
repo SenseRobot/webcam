@@ -13,4 +13,6 @@ import com.evastos.music.ui.util.extensions.loadImage
 import com.evastos.music.ui.util.extensions.setGone
 import com.evastos.music.ui.util.extensions.setVisible
 import com.evastos.music.ui.util.extensions.showText
-import kotlinx.android.synthetic.main.layout_item_artist.v
+import kotlinx.android.synthetic.main.layout_item_artist.view.artistImageView
+import kotlinx.android.synthetic.main.layout_item_artist.view.artistNameTextView
+import kotlinx.android.synthetic.main.layout_it
