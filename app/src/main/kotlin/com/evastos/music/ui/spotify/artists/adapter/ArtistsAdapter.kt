@@ -22,4 +22,5 @@ class ArtistsAdapter(
     private val artistClickListener: (Artist?) -> Unit
 ) : PagedListAdapter<Artist, RecyclerView.ViewHolder>(ArtistDiffItemCallback) {
 
-    override fun onCr
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
+        return ArtistItemViewHolder(parent.inflat
