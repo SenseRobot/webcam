@@ -15,4 +15,8 @@ import com.evastos.music.ui.util.extensions.setVisible
 import com.evastos.music.ui.util.extensions.showText
 import kotlinx.android.synthetic.main.layout_item_artist.view.artistImageView
 import kotlinx.android.synthetic.main.layout_item_artist.view.artistNameTextView
-import kotlinx.android.synthetic.main.layout_it
+import kotlinx.android.synthetic.main.layout_item_artist.view.artistOverlay
+
+class ArtistsAdapter(
+    private val glideRequests: GlideRequests,
+    private val artistClickList
