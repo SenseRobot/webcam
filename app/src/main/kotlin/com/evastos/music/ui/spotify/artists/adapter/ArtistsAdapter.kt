@@ -19,4 +19,7 @@ import kotlinx.android.synthetic.main.layout_item_artist.view.artistOverlay
 
 class ArtistsAdapter(
     private val glideRequests: GlideRequests,
-    private val artistClickList
+    private val artistClickListener: (Artist?) -> Unit
+) : PagedListAdapter<Artist, RecyclerView.ViewHolder>(ArtistDiffItemCallback) {
+
+    override fun onCr
