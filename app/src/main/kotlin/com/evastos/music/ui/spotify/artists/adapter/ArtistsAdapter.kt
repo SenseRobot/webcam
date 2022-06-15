@@ -27,4 +27,7 @@ class ArtistsAdapter(
     }
 
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
-        if (h
+        if (holder is ArtistItemViewHolder) {
+            holder.bind(getItem(position))
+        } else {
+            throw RuntimeExcepti
