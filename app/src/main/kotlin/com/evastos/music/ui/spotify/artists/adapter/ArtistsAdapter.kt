@@ -23,4 +23,8 @@ class ArtistsAdapter(
 ) : PagedListAdapter<Artist, RecyclerView.ViewHolder>(ArtistDiffItemCallback) {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
-        return ArtistItemViewHolder(parent.inflat
+        return ArtistItemViewHolder(parent.inflate(R.layout.layout_item_artist))
+    }
+
+    override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
+        if (h
