@@ -30,4 +30,9 @@ class ArtistsAdapter(
         if (holder is ArtistItemViewHolder) {
             holder.bind(getItem(position))
         } else {
-            throw RuntimeExcepti
+            throw RuntimeException("Unknown view holder type")
+        }
+    }
+
+    private inner class ArtistItemViewHolder(movieItemView: View) :
+        RecyclerView.Vi
