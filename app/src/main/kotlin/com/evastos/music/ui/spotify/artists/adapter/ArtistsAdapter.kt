@@ -35,4 +35,9 @@ class ArtistsAdapter(
     }
 
     private inner class ArtistItemViewHolder(movieItemView: View) :
-        RecyclerView.Vi
+        RecyclerView.ViewHolder(movieItemView) {
+
+        fun bind(artist: Artist?) {
+            with(itemView) {
+                artistNameTextView.setVisible()
+ 
