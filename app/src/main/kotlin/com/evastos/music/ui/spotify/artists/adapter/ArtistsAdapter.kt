@@ -40,4 +40,6 @@ class ArtistsAdapter(
         fun bind(artist: Artist?) {
             with(itemView) {
                 artistNameTextView.setVisible()
- 
+                artistNameTextView.showText(artist?.name)
+                val artistImagePath = artist?.images?.let { images ->
+            
