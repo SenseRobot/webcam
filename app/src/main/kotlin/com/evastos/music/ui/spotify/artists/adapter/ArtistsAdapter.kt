@@ -42,4 +42,6 @@ class ArtistsAdapter(
                 artistNameTextView.setVisible()
                 artistNameTextView.showText(artist?.name)
                 val artistImagePath = artist?.images?.let { images ->
-            
+                    if (images.isNotEmpty()) images[0].url else null
+                }
+                glideRequests.loadImage(a
