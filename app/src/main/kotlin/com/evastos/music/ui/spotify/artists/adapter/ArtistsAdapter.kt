@@ -44,4 +44,7 @@ class ArtistsAdapter(
                 val artistImagePath = artist?.images?.let { images ->
                     if (images.isNotEmpty()) images[0].url else null
                 }
-                glideRequests.loadImage(a
+                glideRequests.loadImage(artistImagePath, artistImageView) {
+                    artistNameTextView.setGone()
+                }
+                artistOverlay.debounceClicks(
