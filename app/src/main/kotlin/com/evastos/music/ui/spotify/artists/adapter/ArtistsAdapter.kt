@@ -50,4 +50,10 @@ class ArtistsAdapter(
                 artistOverlay.debounceClicks()
                         .subscribe { _ ->
                             artist?.let {
-                                artistClickListe
+                                artistClickListener.invoke(it)
+                            }
+                        }
+            }
+        }
+    }
+}
