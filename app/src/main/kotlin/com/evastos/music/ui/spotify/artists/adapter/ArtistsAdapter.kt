@@ -47,4 +47,7 @@ class ArtistsAdapter(
                 glideRequests.loadImage(artistImagePath, artistImageView) {
                     artistNameTextView.setGone()
                 }
-                artistOverlay.debounceClicks(
+                artistOverlay.debounceClicks()
+                        .subscribe { _ ->
+                            artist?.let {
+                                artistClickListe
