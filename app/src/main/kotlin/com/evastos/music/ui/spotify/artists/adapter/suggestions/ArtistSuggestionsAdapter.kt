@@ -21,4 +21,8 @@ class ArtistSuggestionsAdapter(
     IntArray(1) { R.id.artistSuggestionTextView },
     0
 ) {
-    private var sug
+    private var suggestions: List<Artist>? = null
+
+    /**
+     * Sets the artist suggestions.
+     * Ugly solution but SearchView only takes a CursorAdapte
