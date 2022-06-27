@@ -17,4 +17,8 @@ class ArtistSuggestionsAdapter(
     context,
     R.layout.layout_item_artist_suggestion,
     null,
-    Array(1) 
+    Array(1) { SearchManager.SUGGEST_COLUMN_TEXT_1 },
+    IntArray(1) { R.id.artistSuggestionTextView },
+    0
+) {
+    private var sug
