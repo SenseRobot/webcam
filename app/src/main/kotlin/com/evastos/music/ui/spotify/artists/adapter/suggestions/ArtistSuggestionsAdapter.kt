@@ -11,4 +11,10 @@ import com.evastos.music.data.model.spotify.item.artist.Artist
 /**
  * Shows movie suggestions while typing the query in the search view.
  */
-class Ar
+class ArtistSuggestionsAdapter(
+    context: Context?
+) : SimpleCursorAdapter(
+    context,
+    R.layout.layout_item_artist_suggestion,
+    null,
+    Array(1) 
