@@ -25,4 +25,8 @@ class ArtistSuggestionsAdapter(
 
     /**
      * Sets the artist suggestions.
-     * Ugly solution but SearchView only takes a CursorAdapte
+     * Ugly solution but SearchView only takes a CursorAdapter.
+     */
+    fun setSuggestions(suggestions: List<Artist>?) {
+        this.suggestions = suggestions
+        val columns = arra
