@@ -29,4 +29,6 @@ class ArtistSuggestionsAdapter(
      */
     fun setSuggestions(suggestions: List<Artist>?) {
         this.suggestions = suggestions
-        val columns = arra
+        val columns = arrayOf(BaseColumns._ID, SearchManager.SUGGEST_COLUMN_TEXT_1)
+        val cursor = MatrixCursor(columns)
+        suggestions?
