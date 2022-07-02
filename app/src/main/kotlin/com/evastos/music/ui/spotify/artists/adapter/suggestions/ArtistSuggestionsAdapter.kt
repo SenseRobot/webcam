@@ -41,4 +41,8 @@ class ArtistSuggestionsAdapter(
     }
 
     /**
-     * Returns the artist name for the position, or 
+     * Returns the artist name for the position, or null if there is no item at this position.
+     */
+    fun getArtistName(position: Int): String? {
+        suggestions?.let {
+ 
