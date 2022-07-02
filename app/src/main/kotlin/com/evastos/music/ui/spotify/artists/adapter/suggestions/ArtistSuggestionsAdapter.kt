@@ -34,4 +34,11 @@ class ArtistSuggestionsAdapter(
         suggestions?.let {
             for (i in 0 until it.size) {
                 val row = arrayOf(i.toString(), it[i].name)
-               
+                cursor.addRow(row)
+            }
+        }
+        swapCursor(cursor)
+    }
+
+    /**
+     * Returns the artist name for the position, or 
