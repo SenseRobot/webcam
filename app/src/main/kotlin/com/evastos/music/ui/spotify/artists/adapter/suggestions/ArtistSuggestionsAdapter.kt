@@ -45,4 +45,10 @@ class ArtistSuggestionsAdapter(
      */
     fun getArtistName(position: Int): String? {
         suggestions?.let {
- 
+            if (position < it.size) {
+                return it[position].name
+            }
+        }
+        return null
+    }
+}
