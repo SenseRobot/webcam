@@ -15,4 +15,6 @@ class AuthenticationViewModel
     val authErrorLiveData = repository.authErrorLiveData
     val userLiveEvent = repository.userLiveEvent
 
-    fun onCreate(netw
+    fun onCreate(networkConnectivityObservable: Observable<Boolean>?) {
+        super.onCreate(networkConnectivityObservable) { isConnected ->
+     
