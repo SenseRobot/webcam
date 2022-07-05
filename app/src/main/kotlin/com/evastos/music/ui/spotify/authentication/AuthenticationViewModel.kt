@@ -11,4 +11,8 @@ class AuthenticationViewModel
     private val repository: Repositories.Spotify.Authentication
 ) : BaseViewModel() {
 
-    val authRequestLiveEvent = rep
+    val authRequestLiveEvent = repository.authRequestLiveEvent
+    val authErrorLiveData = repository.authErrorLiveData
+    val userLiveEvent = repository.userLiveEvent
+
+    fun onCreate(netw
