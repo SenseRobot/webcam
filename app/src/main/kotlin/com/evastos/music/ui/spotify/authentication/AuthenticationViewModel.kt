@@ -7,4 +7,8 @@ import io.reactivex.Observable
 import javax.inject.Inject
 
 class AuthenticationViewModel
-@Inject co
+@Inject constructor(
+    private val repository: Repositories.Spotify.Authentication
+) : BaseViewModel() {
+
+    val authRequestLiveEvent = rep
