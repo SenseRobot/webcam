@@ -20,4 +20,11 @@ class AuthenticationViewModel
             networkConnectivityBannerLiveData.postValue(isConnected.not())
             if (isConnected) {
                 authenticateOrGetUser()
-   
+            }
+        }
+        authenticateOrGetUser()
+    }
+
+    fun onRetry() {
+        authenticateOrGetUser()
+    }
