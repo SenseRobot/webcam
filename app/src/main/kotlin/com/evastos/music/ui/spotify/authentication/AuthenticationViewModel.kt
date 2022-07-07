@@ -17,4 +17,7 @@ class AuthenticationViewModel
 
     fun onCreate(networkConnectivityObservable: Observable<Boolean>?) {
         super.onCreate(networkConnectivityObservable) { isConnected ->
-     
+            networkConnectivityBannerLiveData.postValue(isConnected.not())
+            if (isConnected) {
+                authenticateOrGetUser()
+   
