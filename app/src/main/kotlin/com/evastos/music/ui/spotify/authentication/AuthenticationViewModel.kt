@@ -28,3 +28,12 @@ class AuthenticationViewModel
     fun onRetry() {
         authenticateOrGetUser()
     }
+
+    fun onAuthResponse(authResponse: AuthenticationResponse) {
+        repository.handleAuthResponse(authResponse, disposables)
+    }
+
+    private fun authenticateOrGetUser() {
+        repository.authenticateOrGetUser()
+    }
+}
