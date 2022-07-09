@@ -8,4 +8,5 @@ open class DateTimeUtil {
     /**
      * Returns current system time in millis.
      */
-    op
+    open fun getNow() = System.currentTimeMillis()
+}
