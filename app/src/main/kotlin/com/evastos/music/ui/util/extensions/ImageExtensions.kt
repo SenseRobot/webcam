@@ -10,4 +10,9 @@ import com.bumptech.glide.request.target.Target
 import com.evastos.music.R
 import com.evastos.music.inject.module.GlideRequests
 
-fun GlideRequests.load
+fun GlideRequests.loadImage(
+    imagePath: String?,
+    imageView: ImageView,
+    onLoaded: (() -> Unit)? = null
+) {
+    clear(imag
