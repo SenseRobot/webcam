@@ -19,4 +19,7 @@ fun GlideRequests.loadImage(
     if (imagePath != null) {
         load(Uri.parse(imagePath))
                 .centerCrop()
-                .listener(object : R
+                .listener(object : RequestListener<Drawable> {
+                    override fun onLoadFailed(
+                        e: GlideException?,
+          
