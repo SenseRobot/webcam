@@ -15,4 +15,8 @@ fun GlideRequests.loadImage(
     imageView: ImageView,
     onLoaded: (() -> Unit)? = null
 ) {
-    clear(imag
+    clear(imageView)
+    if (imagePath != null) {
+        load(Uri.parse(imagePath))
+                .centerCrop()
+                .listener(object : R
