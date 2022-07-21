@@ -25,4 +25,6 @@ fun GlideRequests.loadImage(
                         model: Any?,
                         target: Target<Drawable>?,
                         isFirstResource: Boolean
-             
+                    ): Boolean {
+                        imageView.scaleType = ImageView.ScaleType.CENTER_INSIDE
+                        imageView.setImageRe
