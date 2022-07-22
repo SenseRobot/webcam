@@ -27,4 +27,8 @@ fun GlideRequests.loadImage(
                         isFirstResource: Boolean
                     ): Boolean {
                         imageView.scaleType = ImageView.ScaleType.CENTER_INSIDE
-                        imageView.setImageRe
+                        imageView.setImageResource(R.drawable.ic_broken_image)
+                        return false
+                    }
+
+                    override fun onReso
