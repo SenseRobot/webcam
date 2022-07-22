@@ -31,4 +31,7 @@ fun GlideRequests.loadImage(
                         return false
                     }
 
-                    override fun onReso
+                    override fun onResourceReady(
+                        resource: Drawable?,
+                        model: Any?,
+                        target: Target<Drawable>?,
