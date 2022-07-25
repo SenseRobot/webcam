@@ -37,4 +37,8 @@ fun GlideRequests.loadImage(
                         target: Target<Drawable>?,
                         dataSource: DataSource?,
                         isFirstResource: Boolean
-                    ): B
+                    ): Boolean {
+                        onLoaded?.invoke()
+                        return false
+                    }
+           
