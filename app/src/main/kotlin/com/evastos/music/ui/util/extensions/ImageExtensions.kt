@@ -35,3 +35,6 @@ fun GlideRequests.loadImage(
                         resource: Drawable?,
                         model: Any?,
                         target: Target<Drawable>?,
+                        dataSource: DataSource?,
+                        isFirstResource: Boolean
+                    ): B
