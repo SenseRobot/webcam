@@ -41,4 +41,7 @@ fun GlideRequests.loadImage(
                         onLoaded?.invoke()
                         return false
                     }
-           
+                })
+                .into(imageView)
+    } else {
+        imageView.scaleType = ImageView.ScaleType.CENTER_INS
