@@ -44,4 +44,7 @@ fun GlideRequests.loadImage(
                 })
                 .into(imageView)
     } else {
-        imageView.scaleType = ImageView.ScaleType.CENTER_INS
+        imageView.scaleType = ImageView.ScaleType.CENTER_INSIDE
+        imageView.setImageResource(R.drawable.ic_broken_image)
+    }
+}
