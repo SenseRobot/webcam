@@ -35,3 +35,39 @@ fun View.setInvisible() {
 fun TextView.showText(text: String?) {
     this.text = text
 }
+
+fun SwipeRefreshLayout.setRefreshing() {
+    isRefreshing = true
+}
+
+fun SwipeRefreshLayout.setNotRefreshing() {
+    isRefreshing = false
+}
+
+fun ViewGroup.inflate(@LayoutRes layoutRes: Int, attachToRoot: Boolean = false): View {
+    return LayoutInflater.from(context).inflate(layoutRes, this, attachToRoot)
+}
+
+fun showSnackbarForView(
+    view: View,
+    snackbarMessage: String,
+    actionMessage: String?,
+    action: (() -> Unit)? = null
+): Snackbar {
+    return Snackbar.make(view, snackbarMessage, Snackbar.LENGTH_INDEFINITE)
+            .apply {
+                setAction(actionMessage) {
+                    action?.invoke()
+                }
+                view.setBackgroundColor(ContextCompat.getColor(context, R.color.black))
+                show()
+            }
+}
+
+fun Snackbar?.hideIfShown() {
+    this?.let {
+        if (it.isShown) {
+            it.dismiss()
+        }
+    }
+}
