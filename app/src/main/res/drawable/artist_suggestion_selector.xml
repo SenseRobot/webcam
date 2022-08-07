@@ -2,4 +2,5 @@
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:drawable="@color/pressed" android:state_pressed="true" />
     <item android:drawable="@color/artistSuggestionBackground" android:state_focused="true" />
-    <item andr
+    <item android:drawable="@color/artistSuggestionBackground" />
+</selector>
