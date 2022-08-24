@@ -15,4 +15,8 @@
         <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingBottom="@dimen/spacing_2
+            android:paddingBottom="@dimen/spacing_2x">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/artistImageView"
+     
