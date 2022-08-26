@@ -19,4 +19,6 @@
 
             <android.support.v7.widget.AppCompatImageView
                 android:id="@+id/artistImageView"
-     
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@color/black"
