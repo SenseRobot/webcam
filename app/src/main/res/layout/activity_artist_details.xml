@@ -29,4 +29,7 @@
                 tools:ignore="ContentDescription" />
 
             <android.support.v7.widget.AppCompatTextView
-                android:id="@+i
+                android:id="@+id/artistNameTextView"
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+   
