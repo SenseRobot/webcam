@@ -39,4 +39,6 @@
                 android:gravity="start"
                 android:textColor="@color/accent"
                 android:textSize="@dimen/textSizeMedium"
-   
+                android:visibility="gone"
+                app:layout_constraintTop_toBottomOf="@+id/artistImageView"
+               
