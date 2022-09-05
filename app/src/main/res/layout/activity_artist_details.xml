@@ -50,4 +50,6 @@
                 android:layout_height="0dip"
                 android:layout_marginStart="@dimen/spacing_2x"
                 android:layout_marginTop="@dimen/spacing_2x"
-        
+                android:layout_marginEnd="@dimen/spacing_2x"
+                android:gravity="start|top"
+                android:textSiz
