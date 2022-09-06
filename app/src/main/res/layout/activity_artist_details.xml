@@ -58,4 +58,6 @@
                 tools:text="Indie, dreampop, shoegaze"
                 tools:visibility="visible" />
 
-            <android.suppor
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/artistFollowersTextView"
+                android:layout_width="match
