@@ -75,4 +75,6 @@
             <android.support.v7.widget.AppCompatButton
                 android:id="@+id/artistExternalUrlButton"
                 style="@style/AppButton"
-                android:layout_width="match_
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_1
