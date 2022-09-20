@@ -79,4 +79,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/spacing_1x"
                 android:layout_marginEnd="@dimen/spacing_1x"
-                android:layout_marginTop="@dimen/s
+                android:layout_marginTop="@dimen/spacing_4x"
+                android:gravity="center"
+                android:padding="@dimen/spacing_1x"
+                android:text=
