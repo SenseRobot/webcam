@@ -82,4 +82,7 @@
                 android:layout_marginTop="@dimen/spacing_4x"
                 android:gravity="center"
                 android:padding="@dimen/spacing_1x"
-                android:text=
+                android:text="@string/action_open_external_url"
+                android:textSize="@dimen/textSizeSmall"
+                android:visibility="gone"
+       
