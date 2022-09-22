@@ -85,4 +85,5 @@
                 android:text="@string/action_open_external_url"
                 android:textSize="@dimen/textSizeSmall"
                 android:visibility="gone"
-       
+                app:layout_constraintTop_toBottomOf="@+id/artistFollowersTextView"
+                tools:visibility="visible" />
