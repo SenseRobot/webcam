@@ -94,4 +94,8 @@
         android:id="@+id/networkConnectivityBanner"
         layout="@layout/network_connectivity_banner"
         android:layout_width="match_parent"
-        android:layout
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.suppor
