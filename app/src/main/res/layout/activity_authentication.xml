@@ -5,4 +5,9 @@
     android:id="@+id/authenticationRootView"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:animateLayoutChanges="
+    android:animateLayoutChanges="true"
+    tools:context=".ui.spotify.authentication.AuthenticationActivity">
+
+    <include
+        android:id="@+id/networkConnectivityBanner"
+  
