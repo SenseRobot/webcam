@@ -12,4 +12,8 @@
         android:id="@+id/networkConnectivityBanner"
         layout="@layout/network_connectivity_banner"
         android:layout_width="match_parent"
-        android:la
+        android:layout_height="0dp"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constra
