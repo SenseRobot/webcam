@@ -16,4 +16,4 @@
         android:visibility="gone"
         app:layout_constraintTop_toTopOf="parent" />
 
-</android.support.constra
+</android.support.constraint.ConstraintLayout>
