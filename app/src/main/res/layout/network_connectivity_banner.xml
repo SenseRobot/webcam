@@ -1,2 +1,3 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v
+<android.support.v7.widget.AppCompatTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_par
