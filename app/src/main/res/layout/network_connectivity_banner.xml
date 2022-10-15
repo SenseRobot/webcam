@@ -6,4 +6,5 @@
     android:gravity="center"
     android:padding="@dimen/spacing_0_5x"
     android:text="@string/network_connectivity_banner"
-    android:textColor="@color/whit
+    android:textColor="@color/white"
+    android:textSize="@dimen/textSizeXSmall" />
