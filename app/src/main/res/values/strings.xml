@@ -1,2 +1,4 @@
 <resources>
-    <string name="app_name" tra
+    <string name="app_name" translatable="false">Music</string>
+    <string name="activity_title_authentication">Spotify Authentication</string>
+    <string name="activity
