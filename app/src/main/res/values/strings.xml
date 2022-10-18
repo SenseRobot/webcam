@@ -3,4 +3,6 @@
     <string name="activity_title_authentication">Spotify Authentication</string>
     <string name="activity_title_artists">Spotify Artists</string>
     <string name="activity_title_artist_details">Spotify Artist</string>
-    <string name=
+    <string name="action_retry">Retry</string>
+    <string name="action_search_artists">Search artists</string>
+    <string name="action_ope
