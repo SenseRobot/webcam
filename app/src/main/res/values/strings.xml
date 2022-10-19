@@ -5,4 +5,6 @@
     <string name="activity_title_artist_details">Spotify Artist</string>
     <string name="action_retry">Retry</string>
     <string name="action_search_artists">Search artists</string>
-    <string name="action_ope
+    <string name="action_open_external_url">Open URL</string>
+    <string name="artist_details_genres">Genres: %s</string>
+    <string name="artist_d
