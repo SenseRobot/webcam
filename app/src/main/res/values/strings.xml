@@ -7,4 +7,7 @@
     <string name="action_search_artists">Search artists</string>
     <string name="action_open_external_url">Open URL</string>
     <string name="artist_details_genres">Genres: %s</string>
-    <string name="artist_d
+    <string name="artist_details_followers">Followers: %d</string>
+
+    <string name="network_connectivity_banner">No network connection</string>
+    <stri
