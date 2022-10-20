@@ -10,4 +10,5 @@
     <string name="artist_details_followers">Followers: %d</string>
 
     <string name="network_connectivity_banner">No network connection</string>
-    <stri
+    <string name="error_server_unavailable">Service is temporarily unavailable. Please try again later.</string>
+    <string name=
