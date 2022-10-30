@@ -13,4 +13,6 @@ class RxImmediateSchedulerRule : TestRule {
         return object : Statement() {
             @Throws(Throwable::class)
             override fun evaluate() {
-                RxJavaPlugins.setIoSchedulerHandl
+                RxJavaPlugins.setIoSchedulerHandler { Schedulers.trampoline() }
+                RxJavaPlugins.setComputationSchedulerHandler { Schedulers.trampoline() }
+       
