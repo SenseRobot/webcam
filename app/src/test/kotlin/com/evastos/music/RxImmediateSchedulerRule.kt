@@ -11,4 +11,6 @@ class RxImmediateSchedulerRule : TestRule {
 
     override fun apply(base: Statement, d: Description): Statement {
         return object : Statement() {
-            @
+            @Throws(Throwable::class)
+            override fun evaluate() {
+                RxJavaPlugins.setIoSchedulerHandl
