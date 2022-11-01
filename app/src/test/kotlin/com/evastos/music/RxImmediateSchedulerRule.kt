@@ -15,4 +15,5 @@ class RxImmediateSchedulerRule : TestRule {
             override fun evaluate() {
                 RxJavaPlugins.setIoSchedulerHandler { Schedulers.trampoline() }
                 RxJavaPlugins.setComputationSchedulerHandler { Schedulers.trampoline() }
-       
+                RxJavaPlugins.setNewThreadSchedulerHandler { Schedulers.trampoline() }
+                RxAndroidPlugins.setInit
