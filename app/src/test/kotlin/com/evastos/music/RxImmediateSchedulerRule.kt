@@ -23,4 +23,8 @@ class RxImmediateSchedulerRule : TestRule {
                 } finally {
                     RxJavaPlugins.reset()
                     RxAndroidPlugins.reset()
-     
+                }
+            }
+        }
+    }
+}
