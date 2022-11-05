@@ -83,3 +83,34 @@ object TestUtil {
 
     val searchResponse = SearchResponse(
         albums = null,
+        tracks = null,
+        playlists = null,
+        artists = Items(
+            href = "href",
+            items = artistList2,
+            offset = 0,
+            limit = 10,
+            total = 50
+        )
+    )
+
+    val autDataValid = AuthData(
+        authToken = "authTokenValid",
+        authTokenExpiresIn = 1000L,
+        authTokenRefreshedAt = 0L
+    )
+
+    val autDataExpired = AuthData(
+        authToken = "authTokenExpired",
+        authTokenExpiresIn = 0L,
+        authTokenRefreshedAt = 10L
+    )
+
+    val user = User(
+        id = "id",
+        displayName = "displayName",
+        uri = "uri",
+        type = "user",
+        email = "email"
+    )
+}
