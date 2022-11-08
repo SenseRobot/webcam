@@ -9,4 +9,8 @@ import okhttp3.ResponseBody
 import org.junit.Assert.assertTrue
 import org.junit.Before
 import org.junit.Test
-import r
+import retrofit2.HttpException
+import retrofit2.Response
+import java.net.ConnectException
+import java.net.HttpURLConnection
+import java
