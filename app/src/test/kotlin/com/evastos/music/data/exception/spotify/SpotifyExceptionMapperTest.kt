@@ -13,4 +13,9 @@ import retrofit2.HttpException
 import retrofit2.Response
 import java.net.ConnectException
 import java.net.HttpURLConnection
-import java
+import java.net.SocketTimeoutException
+import java.net.UnknownHostException
+
+class SpotifyExceptionMapperTest {
+
+    private lateinit var exceptionMapper: Except
