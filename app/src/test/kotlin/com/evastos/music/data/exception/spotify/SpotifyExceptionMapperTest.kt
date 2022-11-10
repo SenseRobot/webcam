@@ -18,4 +18,11 @@ import java.net.UnknownHostException
 
 class SpotifyExceptionMapperTest {
 
-    private lateinit var exceptionMapper: Except
+    private lateinit var exceptionMapper: ExceptionMappers.Spotify
+
+    @Before
+    fun setUp() {
+        exceptionMapper = SpotifyExceptionMapper()
+    }
+
+    
