@@ -29,4 +29,10 @@ class SpotifyExceptionMapperTest {
     fun map_withSocketTimeoutException_returnsNetworkException() {
         val throwable = SocketTimeoutException()
 
-        val exceptio
+        val exception = exceptionMapper.map(throwable)
+
+        assertTrue(exception is SpotifyException.NetworkException)
+    }
+
+    @Test
+    fun ma
