@@ -38,4 +38,10 @@ class SpotifyExceptionMapperTest {
     fun map_withUnknownHostException_returnsNetworkException() {
         val throwable = UnknownHostException()
 
-        val exception = excep
+        val exception = exceptionMapper.map(throwable)
+
+        assertTrue(exception is SpotifyException.NetworkException)
+    }
+
+    @Test
+    fun m
