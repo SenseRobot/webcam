@@ -47,4 +47,10 @@ class SpotifyExceptionMapperTest {
     fun map_withNetworkFailFastException_returnsNetworkFailFastException() {
         val throwable = NetworkFailFastException()
 
-        
+        val exception = exceptionMapper.map(throwable)
+
+        assertTrue(exception is SpotifyException.NetworkFailFastException)
+    }
+
+    @Test
+    fun
