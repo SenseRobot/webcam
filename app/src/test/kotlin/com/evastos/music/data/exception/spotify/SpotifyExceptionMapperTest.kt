@@ -62,4 +62,5 @@ class SpotifyExceptionMapperTest {
     }
 
     @Test
-    fu
+    fun map_withHttpException_with400StatusCode_returnsClientException() {
+        val exception = exceptionMapper.map(getHttp
