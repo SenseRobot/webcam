@@ -56,4 +56,10 @@ class SpotifyExceptionMapperTest {
     fun map_withConnectException_returnsServerException() {
         val throwable = ConnectException()
 
-        val exception =
+        val exception = exceptionMapper.map(throwable)
+
+        assertTrue(exception is SpotifyException.ServerException)
+    }
+
+    @Test
+    fu
