@@ -71,4 +71,6 @@ class SpotifyExceptionMapperTest {
     @Test
     fun map_withHttpException_with415StatusCode_returnsClientException() {
         val exception =
-          
+                exceptionMapper.map(getHttpException(HttpURLConnection.HTTP_UNSUPPORTED_TYPE))
+
+        assertTrue(exception is SpotifyException
