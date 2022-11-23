@@ -80,4 +80,9 @@ class SpotifyExceptionMapperTest {
     fun map_withHttpException_with500StatusCode_returnsServerException() {
         val exception = exceptionMapper.map(getHttpException(HttpURLConnection.HTTP_INTERNAL_ERROR))
 
-        assertTrue(exception is SpotifyException.S
+        assertTrue(exception is SpotifyException.ServerException)
+    }
+
+    @Test
+    fun map_withHttpException_with505StatusCode_returnsServerException() {
+        val exception = e
