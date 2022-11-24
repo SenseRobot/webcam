@@ -94,4 +94,9 @@ class SpotifyExceptionMapperTest {
     fun map_withOtherException_returnsUnknownException() {
         val throwable = Throwable()
 
-        val exce
+        val exception = exceptionMapper.map(throwable)
+
+        assertTrue(exception is SpotifyException.UnknownException)
+    }
+
+    private fun getHttpException(statusCode: In
