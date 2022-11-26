@@ -102,4 +102,6 @@ class SpotifyExceptionMapperTest {
     private fun getHttpException(statusCode: Int): HttpException {
         val request = Request.Builder().url("http://192.168.1.7").build()
         return HttpException(
-    
+            Response.error<String>(
+                ResponseBody.create(
+                    MediaType.parse("applicatio
