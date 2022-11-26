@@ -104,4 +104,8 @@ class SpotifyExceptionMapperTest {
         return HttpException(
             Response.error<String>(
                 ResponseBody.create(
-                    MediaType.parse("applicatio
+                    MediaType.parse("application/json"),
+                    ""
+                ),
+                okhttp3.Response.Builder().code(statusCode)
+           
