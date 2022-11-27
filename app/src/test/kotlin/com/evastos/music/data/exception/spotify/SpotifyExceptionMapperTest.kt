@@ -108,4 +108,9 @@ class SpotifyExceptionMapperTest {
                     ""
                 ),
                 okhttp3.Response.Builder().code(statusCode)
-           
+                        .message("")
+                        .request(request).protocol(Protocol.HTTP_1_1).build()
+            )
+        )
+    }
+}
