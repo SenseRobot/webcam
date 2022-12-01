@@ -14,4 +14,8 @@ class NetworkConnectivityProviderTest {
 
     private val context = mock<Context>()
     private val connectivityManager = mock<ConnectivityManager>()
-    private val netw
+    private val networkInfo = mock<NetworkInfo>()
+
+    private lateinit var networkConnectivityProvider: NetworkConnectivityProvider
+
+    @Be
