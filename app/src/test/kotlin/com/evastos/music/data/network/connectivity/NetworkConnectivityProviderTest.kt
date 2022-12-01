@@ -12,4 +12,6 @@ import org.junit.Test
 
 class NetworkConnectivityProviderTest {
 
-    pri
+    private val context = mock<Context>()
+    private val connectivityManager = mock<ConnectivityManager>()
+    private val netw
