@@ -18,4 +18,7 @@ class NetworkConnectivityProviderTest {
 
     private lateinit var networkConnectivityProvider: NetworkConnectivityProvider
 
-    @Be
+    @Before
+    fun setUp() {
+        networkConnectivityProvider = NetworkConnectivityProvider(context)
+        
