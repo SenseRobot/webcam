@@ -21,4 +21,6 @@ class NetworkConnectivityProviderTest {
     @Before
     fun setUp() {
         networkConnectivityProvider = NetworkConnectivityProvider(context)
-        
+        whenever(context.getSystemService(Context.CONNECTIVITY_SERVICE))
+                .thenReturn(connectivityManager)
+        whenever(connectivity
