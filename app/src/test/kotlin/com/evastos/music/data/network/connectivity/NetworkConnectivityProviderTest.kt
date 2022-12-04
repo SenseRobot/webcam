@@ -27,4 +27,7 @@ class NetworkConnectivityProviderTest {
     }
 
     @Test
-    fun isConnected_withConnectivityAction_whenConnected
+    fun isConnected_withConnectivityAction_whenConnected_returnsTrue() {
+        whenever(networkInfo.isConnected).thenReturn(true)
+
+        val isConnected = networkConnectivityPr
