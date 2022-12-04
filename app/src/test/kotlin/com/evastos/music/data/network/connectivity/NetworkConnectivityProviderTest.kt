@@ -23,4 +23,8 @@ class NetworkConnectivityProviderTest {
         networkConnectivityProvider = NetworkConnectivityProvider(context)
         whenever(context.getSystemService(Context.CONNECTIVITY_SERVICE))
                 .thenReturn(connectivityManager)
-        whenever(connectivity
+        whenever(connectivityManager.activeNetworkInfo).thenReturn(networkInfo)
+    }
+
+    @Test
+    fun isConnected_withConnectivityAction_whenConnected
