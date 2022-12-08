@@ -39,4 +39,10 @@ class NetworkConnectivityProviderTest {
     fun isConnected_withConnectivityAction_whenNotConnected_returnsFalse() {
         whenever(networkInfo.isConnected).thenReturn(false)
 
-        val isConnecte
+        val isConnected = networkConnectivityProvider.isConnected()
+
+        assertFalse(isConnected)
+    }
+
+    @Test
+    fun isConnected_withConnectivityAction_
