@@ -8,4 +8,10 @@ import com.nhaarman.mockito_kotlin.verify
 import io.reactivex.disposables.CompositeDisposable
 import org.junit.Before
 import org.junit.Rule
-import
+import org.junit.Test
+
+class ArtistsSearchDataSourceFactoryTest {
+
+    @Rule
+    @JvmField
+    val rule = InstantTaskExec
