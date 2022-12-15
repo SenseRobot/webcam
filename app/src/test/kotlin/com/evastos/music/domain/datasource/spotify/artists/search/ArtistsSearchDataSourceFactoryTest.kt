@@ -14,4 +14,8 @@ class ArtistsSearchDataSourceFactoryTest {
 
     @Rule
     @JvmField
-    val rule = InstantTaskExec
+    val rule = InstantTaskExecutorRule()
+
+    private val sourceLiveDataObserver = mock<Observer<ArtistsSearchDataSource>>()
+
+    private lateini
