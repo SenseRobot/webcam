@@ -18,4 +18,8 @@ class ArtistsSearchDataSourceFactoryTest {
 
     private val sourceLiveDataObserver = mock<Observer<ArtistsSearchDataSource>>()
 
-    private lateini
+    private lateinit var artistsSearchDataSourceFactory: ArtistsSearchDataSourceFactory
+
+    @Before
+    fun setUp() {
+        artistsSearchDa
