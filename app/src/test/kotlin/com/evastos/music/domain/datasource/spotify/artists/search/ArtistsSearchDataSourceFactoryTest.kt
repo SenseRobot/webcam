@@ -24,4 +24,7 @@ class ArtistsSearchDataSourceFactoryTest {
     fun setUp() {
         artistsSearchDataSourceFactory = ArtistsSearchDataSourceFactory(
             query = "Iceage",
-            spotifyService = mo
+            spotifyService = mock(),
+            exceptionMapper = mock(),
+            exceptionMessageProvider = mock(),
+            disposables = CompositeDisposable
