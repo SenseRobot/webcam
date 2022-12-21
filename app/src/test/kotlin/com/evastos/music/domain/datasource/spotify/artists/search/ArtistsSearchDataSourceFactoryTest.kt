@@ -22,4 +22,6 @@ class ArtistsSearchDataSourceFactoryTest {
 
     @Before
     fun setUp() {
-        artistsSearchDa
+        artistsSearchDataSourceFactory = ArtistsSearchDataSourceFactory(
+            query = "Iceage",
+            spotifyService = mo
