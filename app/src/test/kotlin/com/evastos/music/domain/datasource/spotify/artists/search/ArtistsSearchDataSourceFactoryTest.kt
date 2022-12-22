@@ -33,4 +33,6 @@ class ArtistsSearchDataSourceFactoryTest {
     }
 
     @Test
-    fun create_postsArtistsSearchSou
+    fun create_postsArtistsSearchSourceLiveData() {
+        artistsSearchDataSourceFactory.artistsSearchSourceLiveData
+                .observeForever(sourceLiv
