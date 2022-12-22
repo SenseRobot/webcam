@@ -27,4 +27,10 @@ class ArtistsSearchDataSourceFactoryTest {
             spotifyService = mock(),
             exceptionMapper = mock(),
             exceptionMessageProvider = mock(),
-            disposables = CompositeDisposable
+            disposables = CompositeDisposable(),
+            networkConnectivityProvider = NetworkConnectivityProvider(mock())
+        )
+    }
+
+    @Test
+    fun create_postsArtistsSearchSou
