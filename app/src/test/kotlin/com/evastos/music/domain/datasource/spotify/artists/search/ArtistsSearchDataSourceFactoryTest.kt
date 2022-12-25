@@ -35,4 +35,9 @@ class ArtistsSearchDataSourceFactoryTest {
     @Test
     fun create_postsArtistsSearchSourceLiveData() {
         artistsSearchDataSourceFactory.artistsSearchSourceLiveData
-                .observeForever(sourceLiv
+                .observeForever(sourceLiveDataObserver)
+
+        val artistsSearchSourceLiveData = artistsSearchDataSourceFactory.create()
+
+        verify(sourceLiveDataObserver)
+   
