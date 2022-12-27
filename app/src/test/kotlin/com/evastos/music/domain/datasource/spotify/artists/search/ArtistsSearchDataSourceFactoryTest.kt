@@ -40,4 +40,6 @@ class ArtistsSearchDataSourceFactoryTest {
         val artistsSearchSourceLiveData = artistsSearchDataSourceFactory.create()
 
         verify(sourceLiveDataObserver)
-   
+                .onChanged(artistsSearchSourceLiveData as ArtistsSearchDataSource)
+    }
+}
