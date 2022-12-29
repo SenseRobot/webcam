@@ -7,4 +7,6 @@ import com.evastos.music.RxImmediateSchedulerRule
 import com.evastos.music.TestUtil
 import com.evastos.music.data.exception.ExceptionMappers
 import com.evastos.music.data.exception.spotify.SpotifyException
-import com.evas
+import com.evastos.music.data.model.spotify.item.artist.Artist
+import com.evastos.music.data.network.connectivity.NetworkConnectivityProvider
+import com.evastos.music
