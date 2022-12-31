@@ -11,4 +11,7 @@ import com.evastos.music.data.model.spotify.item.artist.Artist
 import com.evastos.music.data.network.connectivity.NetworkConnectivityProvider
 import com.evastos.music.data.service.spotify.SpotifyService
 import com.evastos.music.domain.exception.ExceptionMessageProviders
-import com.evastos.
+import com.evastos.music.domain.livedata.LoadingState
+import com.nhaarman.mockito_kotlin.any
+import com.nhaarman.mockito_kotlin.check
+import co
