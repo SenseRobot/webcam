@@ -14,4 +14,7 @@ import com.evastos.music.domain.exception.ExceptionMessageProviders
 import com.evastos.music.domain.livedata.LoadingState
 import com.nhaarman.mockito_kotlin.any
 import com.nhaarman.mockito_kotlin.check
-import co
+import com.nhaarman.mockito_kotlin.eq
+import com.nhaarman.mockito_kotlin.mock
+import com.nhaarman.mockito_kotlin.never
+import com.nhaarman.moc
