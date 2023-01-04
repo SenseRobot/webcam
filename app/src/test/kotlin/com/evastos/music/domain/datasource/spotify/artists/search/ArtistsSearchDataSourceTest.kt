@@ -20,4 +20,7 @@ import com.nhaarman.mockito_kotlin.never
 import com.nhaarman.mockito_kotlin.times
 import com.nhaarman.mockito_kotlin.verify
 import com.nhaarman.mockito_kotlin.verifyNoMoreInteractions
-import com.nhaarma
+import com.nhaarman.mockito_kotlin.whenever
+import io.reactivex.Single
+import io.reactivex.disposables.CompositeDisposable
+import org.junit.Assert.assertE
