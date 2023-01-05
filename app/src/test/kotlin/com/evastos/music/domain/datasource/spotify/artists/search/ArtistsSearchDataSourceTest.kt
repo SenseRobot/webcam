@@ -23,4 +23,10 @@ import com.nhaarman.mockito_kotlin.verifyNoMoreInteractions
 import com.nhaarman.mockito_kotlin.whenever
 import io.reactivex.Single
 import io.reactivex.disposables.CompositeDisposable
-import org.junit.Assert.assertE
+import org.junit.Assert.assertEquals
+import org.junit.Assert.assertNotNull
+import org.junit.Before
+import org.junit.Rule
+import org.junit.Test
+
+class ArtistsS
