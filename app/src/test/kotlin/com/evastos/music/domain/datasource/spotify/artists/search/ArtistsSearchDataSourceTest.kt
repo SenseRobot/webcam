@@ -29,4 +29,11 @@ import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
 
-class ArtistsS
+class ArtistsSearchDataSourceTest {
+
+    @Rule
+    @JvmField
+    var testSchedulerRule = RxImmediateSchedulerRule()
+
+    @Rule
+    @JvmField
