@@ -40,4 +40,6 @@ class ArtistsSearchDataSourceTest {
     val rule = InstantTaskExecutorRule()
 
     private val spotifyService = mock<SpotifyService>()
-    private val e
+    private val exceptionMapper = mock<ExceptionMappers.Spotify>()
+    private val exceptionMessageProvider = mock<ExceptionMessageProviders.Spotify>()
+    p
