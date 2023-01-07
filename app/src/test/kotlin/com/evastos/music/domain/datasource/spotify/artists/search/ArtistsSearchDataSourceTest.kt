@@ -37,3 +37,7 @@ class ArtistsSearchDataSourceTest {
 
     @Rule
     @JvmField
+    val rule = InstantTaskExecutorRule()
+
+    private val spotifyService = mock<SpotifyService>()
+    private val e
