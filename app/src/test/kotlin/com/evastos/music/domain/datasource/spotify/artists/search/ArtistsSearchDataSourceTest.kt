@@ -42,4 +42,6 @@ class ArtistsSearchDataSourceTest {
     private val spotifyService = mock<SpotifyService>()
     private val exceptionMapper = mock<ExceptionMappers.Spotify>()
     private val exceptionMessageProvider = mock<ExceptionMessageProviders.Spotify>()
-    p
+    private val loadingStateObserver = mock<Observer<LoadingState>>()
+
+    private val loadParams = PageKeyedDataSource.LoadParams(0, 10
