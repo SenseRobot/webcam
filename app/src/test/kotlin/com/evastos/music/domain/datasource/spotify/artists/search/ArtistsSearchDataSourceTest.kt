@@ -46,4 +46,5 @@ class ArtistsSearchDataSourceTest {
 
     private val loadParams = PageKeyedDataSource.LoadParams(0, 100)
     private val loadCallback = mock<PageKeyedDataSource.LoadCallback<Int, Artist>>()
-    private val loadInitialPara
+    private val loadInitialParams = mock<PageKeyedDataSource.LoadInitialParams<Int>>()
+    private val loadInitialCallback = mock<PageKeyedDataSource.LoadIniti
