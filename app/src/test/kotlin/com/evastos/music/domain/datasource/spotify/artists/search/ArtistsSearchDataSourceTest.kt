@@ -51,4 +51,9 @@ class ArtistsSearchDataSourceTest {
 
     private var networkIsConnected = true
 
-    private lateinit var artistsSearchDataSource: Ar
+    private lateinit var artistsSearchDataSource: ArtistsSearchDataSource
+
+    @Before
+    fun setUp() {
+        whenever(exceptionMapper.map(any())).thenReturn(SpotifyException.UnknownException())
+  
