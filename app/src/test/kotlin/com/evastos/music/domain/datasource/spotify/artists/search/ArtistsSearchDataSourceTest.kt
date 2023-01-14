@@ -56,4 +56,6 @@ class ArtistsSearchDataSourceTest {
     @Before
     fun setUp() {
         whenever(exceptionMapper.map(any())).thenReturn(SpotifyException.UnknownException())
-  
+        whenever(exceptionMessageProvider.getMessage(any()))
+                .thenReturn("error_message")
+        whenever(exceptionMe
