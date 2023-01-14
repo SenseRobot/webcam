@@ -58,4 +58,7 @@ class ArtistsSearchDataSourceTest {
         whenever(exceptionMapper.map(any())).thenReturn(SpotifyException.UnknownException())
         whenever(exceptionMessageProvider.getMessage(any()))
                 .thenReturn("error_message")
-        whenever(exceptionMe
+        whenever(exceptionMessageProvider.getMessage(any<Throwable>()))
+                .thenReturn("error_message")
+
+        artistsSearchDataSource = ArtistsSearchD
