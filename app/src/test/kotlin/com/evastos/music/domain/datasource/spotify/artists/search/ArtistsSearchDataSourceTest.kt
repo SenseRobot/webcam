@@ -64,4 +64,7 @@ class ArtistsSearchDataSourceTest {
         artistsSearchDataSource = ArtistsSearchDataSource(
             query = "Iceage",
             spotifyService = spotifyService,
-            exceptionMapper = exceptionMapper
+            exceptionMapper = exceptionMapper,
+            exceptionMessageProvider = exceptionMessageProvider,
+            networkConnectivityProvider = TestNetworkConnectivityProvider(),
+  
