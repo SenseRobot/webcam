@@ -61,4 +61,7 @@ class ArtistsSearchDataSourceTest {
         whenever(exceptionMessageProvider.getMessage(any<Throwable>()))
                 .thenReturn("error_message")
 
-        artistsSearchDataSource = ArtistsSearchD
+        artistsSearchDataSource = ArtistsSearchDataSource(
+            query = "Iceage",
+            spotifyService = spotifyService,
+            exceptionMapper = exceptionMapper
