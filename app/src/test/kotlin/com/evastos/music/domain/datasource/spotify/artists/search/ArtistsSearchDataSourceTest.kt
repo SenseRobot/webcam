@@ -67,4 +67,6 @@ class ArtistsSearchDataSourceTest {
             exceptionMapper = exceptionMapper,
             exceptionMessageProvider = exceptionMessageProvider,
             networkConnectivityProvider = TestNetworkConnectivityProvider(),
-  
+            disposables = CompositeDisposable()
+        )
+        artistsSearchDataSource.loadingState.observeForever(loadingStat
