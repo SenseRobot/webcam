@@ -74,4 +74,10 @@ class ArtistsSearchDataSourceTest {
 
     @Test
     fun loadBefore_doesNothing() {
-        artistsSearchDataSource.loadBefore(loa
+        artistsSearchDataSource.loadBefore(loadParams, loadCallback)
+
+        verifyNoMoreInteractions(spotifyService)
+        verifyNoMoreInteractions(loadingStateObserver)
+    }
+
+  
