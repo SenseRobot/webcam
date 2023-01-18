@@ -69,4 +69,9 @@ class ArtistsSearchDataSourceTest {
             networkConnectivityProvider = TestNetworkConnectivityProvider(),
             disposables = CompositeDisposable()
         )
-        artistsSearchDataSource.loadingState.observeForever(loadingStat
+        artistsSearchDataSource.loadingState.observeForever(loadingStateObserver)
+    }
+
+    @Test
+    fun loadBefore_doesNothing() {
+        artistsSearchDataSource.loadBefore(loa
