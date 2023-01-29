@@ -80,4 +80,6 @@ class ArtistsSearchDataSourceTest {
         verifyNoMoreInteractions(loadingStateObserver)
     }
 
-  
+    @Test
+    fun loadAfter_withSuccessResponse_callsOnResult() {
+        whenever(spotifyService.search(any(), a
