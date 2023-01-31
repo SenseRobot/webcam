@@ -82,4 +82,7 @@ class ArtistsSearchDataSourceTest {
 
     @Test
     fun loadAfter_withSuccessResponse_callsOnResult() {
-        whenever(spotifyService.search(any(), a
+        whenever(spotifyService.search(any(), any(), any(), any(), any()))
+                .thenReturn(Single.just(TestUtil.searchResponse))
+
+        artistsSearchDataSource.l
