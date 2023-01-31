@@ -85,4 +85,9 @@ class ArtistsSearchDataSourceTest {
         whenever(spotifyService.search(any(), any(), any(), any(), any()))
                 .thenReturn(Single.just(TestUtil.searchResponse))
 
-        artistsSearchDataSource.l
+        artistsSearchDataSource.loadAfter(loadParams, loadCallback)
+
+        verify(loadingStateObserver, times(2)).onChanged(check {
+            assertNotNull(it)
+        })
+        ver
