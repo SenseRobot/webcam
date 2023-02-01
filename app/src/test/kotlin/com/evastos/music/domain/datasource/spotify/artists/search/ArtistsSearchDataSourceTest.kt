@@ -96,4 +96,9 @@ class ArtistsSearchDataSourceTest {
     @Test
     fun loadAfter_withNoNetworkConnectivity_failsFast() {
         whenever(spotifyService.search(any(), any(), any(), any(), any()))
-                .thenReturn(Single.just(TestUtil.searchResp
+                .thenReturn(Single.just(TestUtil.searchResponse))
+        networkIsConnected = false
+
+        artistsSearchDataSource.loadAfter(loadParams, loadCallback)
+
+        verify(loa
