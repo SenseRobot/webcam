@@ -90,4 +90,8 @@ class ArtistsSearchDataSourceTest {
         verify(loadingStateObserver, times(2)).onChanged(check {
             assertNotNull(it)
         })
-        ver
+        verify(loadCallback).onResult(TestUtil.artistList2, 1)
+    }
+
+    @Test
+    fun loadAfter_withNoNetworkConnectivity_failsF
