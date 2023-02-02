@@ -105,3 +105,8 @@ class ArtistsSearchDataSourceTest {
             assertNotNull(it)
         })
         verifyNoMoreInteractions(loadCallback)
+    }
+
+    @Test
+    fun loadAfter_withErrorResponse_doesNotCallOnResult() {
+        whenever(spotifyService.search(any(), any(), any()
