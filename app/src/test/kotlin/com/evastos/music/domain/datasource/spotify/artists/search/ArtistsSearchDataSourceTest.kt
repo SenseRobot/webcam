@@ -101,4 +101,7 @@ class ArtistsSearchDataSourceTest {
 
         artistsSearchDataSource.loadAfter(loadParams, loadCallback)
 
-        verify(loa
+        verify(loadingStateObserver).onChanged(check {
+            assertNotNull(it)
+        })
+        verifyNoMoreInteractions(loadCallback)
