@@ -109,4 +109,7 @@ class ArtistsSearchDataSourceTest {
 
     @Test
     fun loadAfter_withErrorResponse_doesNotCallOnResult() {
-        whenever(spotifyService.search(any(), any(), any()
+        whenever(spotifyService.search(any(), any(), any(), any(), any()))
+                .thenReturn(Single.error(Throwable()))
+
+        artistsSearchDataSource.loadAfter(loadParams, load
