@@ -117,4 +117,9 @@ class ArtistsSearchDataSourceTest {
         verify(loadingStateObserver, times(2)).onChanged(check {
             assertNotNull(it)
         })
-        verif
+        verify(loadCallback, never()).onResult(any(), any())
+    }
+
+    @Test
+    fun loadInitial_withSuccessResponse_callsOnResult() {
+        whenever(spotifySe
