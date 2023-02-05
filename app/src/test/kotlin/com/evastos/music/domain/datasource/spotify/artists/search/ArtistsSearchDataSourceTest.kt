@@ -122,4 +122,6 @@ class ArtistsSearchDataSourceTest {
 
     @Test
     fun loadInitial_withSuccessResponse_callsOnResult() {
-        whenever(spotifySe
+        whenever(spotifyService.search(any(), any(), any(), any(), any()))
+                .thenReturn(Single.just(TestUtil.searchResponse))
+
