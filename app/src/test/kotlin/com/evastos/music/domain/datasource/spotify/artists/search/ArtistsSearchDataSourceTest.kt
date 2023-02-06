@@ -132,3 +132,7 @@ class ArtistsSearchDataSourceTest {
         })
         verify(loadInitialCallback).onResult(TestUtil.artistList2, -1, 1)
     }
+
+    @Test
+    fun loadInitial_withNoNetworkConnectivity_failsFast() {
+        whenever(spotifyService.search(any(), any(), any(),
