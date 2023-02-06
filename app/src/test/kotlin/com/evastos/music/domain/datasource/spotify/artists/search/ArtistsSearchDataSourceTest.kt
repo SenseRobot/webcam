@@ -127,4 +127,8 @@ class ArtistsSearchDataSourceTest {
 
         artistsSearchDataSource.loadInitial(loadInitialParams, loadInitialCallback)
 
-        verify(loadingStateObserver, times(2)
+        verify(loadingStateObserver, times(2)).onChanged(check {
+            assertNotNull(it)
+        })
+        verify(loadInitialCallback).onResult(TestUtil.artistList2, -1, 1)
+    }
