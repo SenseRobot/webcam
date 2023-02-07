@@ -148,4 +148,6 @@ class ArtistsSearchDataSourceTest {
     }
 
     @Test
-    fun loadInitial_withErrorResponse_doesNo
+    fun loadInitial_withErrorResponse_doesNotCallOnResult() {
+        whenever(spotifyService.search(any(), any(), any(), any(), any()))
+                .thenReturn(Single.error(Th
