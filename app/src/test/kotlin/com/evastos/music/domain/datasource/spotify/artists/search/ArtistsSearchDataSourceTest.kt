@@ -135,4 +135,6 @@ class ArtistsSearchDataSourceTest {
 
     @Test
     fun loadInitial_withNoNetworkConnectivity_failsFast() {
-        whenever(spotifyService.search(any(), any(), any(),
+        whenever(spotifyService.search(any(), any(), any(), any(), any()))
+                .thenReturn(Single.just(TestUtil.searchResponse))
+        networkIsConnected = fals
