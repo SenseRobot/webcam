@@ -142,4 +142,10 @@ class ArtistsSearchDataSourceTest {
         artistsSearchDataSource.loadInitial(loadInitialParams, loadInitialCallback)
 
         verify(loadingStateObserver).onChanged(check {
-            as
+            assertNotNull(it)
+        })
+        verifyNoMoreInteractions(loadInitialCallback)
+    }
+
+    @Test
+    fun loadInitial_withErrorResponse_doesNo
