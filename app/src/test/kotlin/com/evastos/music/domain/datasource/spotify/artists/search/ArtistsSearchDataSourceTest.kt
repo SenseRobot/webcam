@@ -150,4 +150,8 @@ class ArtistsSearchDataSourceTest {
     @Test
     fun loadInitial_withErrorResponse_doesNotCallOnResult() {
         whenever(spotifyService.search(any(), any(), any(), any(), any()))
-                .thenReturn(Single.error(Th
+                .thenReturn(Single.error(Throwable()))
+
+        artistsSearchDataSource.loadInitial(loadInitialParams, loadInitialCallback)
+
+        verify(loadingStateObserver, times(2)).onCh
