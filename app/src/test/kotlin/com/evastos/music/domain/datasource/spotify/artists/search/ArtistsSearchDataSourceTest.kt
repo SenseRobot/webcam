@@ -160,4 +160,6 @@ class ArtistsSearchDataSourceTest {
         verify(loadInitialCallback, never()).onResult(any(), any(), any())
     }
 
-    @T
+    @Test
+    fun retryAllFailed_withLoadAfter_withSuccessResponse_doesNotRetry() {
+        whenever(spotifyService.search(any(), any(), any(), any()
