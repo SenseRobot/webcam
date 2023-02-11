@@ -168,4 +168,7 @@ class ArtistsSearchDataSourceTest {
 
         artistsSearchDataSource.retryAllFailed()
 
-        verify(loadingStateObserver, ti
+        verify(loadingStateObserver, times(2)).onChanged(check {
+            assertNotNull(it)
+        })
+        verify(loadCallback).onResult(TestUtil.artistLi
