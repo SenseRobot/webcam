@@ -175,4 +175,13 @@ class ArtistsSearchDataSourceTest {
         verify(spotifyService).search(
             eq("Iceage*"),
             check {
-                assertEquals("artist", it.toS
+                assertEquals("artist", it.toString())
+            },
+            eq("from_token"),
+            eq(20),
+            eq(0)
+        )
+    }
+
+    @Test
+    fun retry
