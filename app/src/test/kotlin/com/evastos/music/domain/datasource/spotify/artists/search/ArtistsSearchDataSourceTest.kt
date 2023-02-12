@@ -184,4 +184,6 @@ class ArtistsSearchDataSourceTest {
     }
 
     @Test
-    fun retry
+    fun retryAllFailed_withLoadAfter_withErrorResponse_doesRetry() {
+        whenever(spotifyService.search(any(), any(), any(), any(), any()))
+                .then
