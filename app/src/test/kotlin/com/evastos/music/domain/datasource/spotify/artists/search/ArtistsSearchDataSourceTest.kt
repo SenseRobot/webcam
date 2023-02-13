@@ -189,4 +189,9 @@ class ArtistsSearchDataSourceTest {
                 .thenReturn(Single.error(Throwable()))
         artistsSearchDataSource.loadAfter(loadParams, loadCallback)
         whenever(spotifyService.search(any(), any(), any(), any(), any()))
-                .thenReturn(Single.just(TestUt
+                .thenReturn(Single.just(TestUtil.searchResponse))
+
+        artistsSearchDataSource.retryAllFailed()
+
+        verify(loadingStateObserver, times(4)).onChanged(check {
+            assertNotN
