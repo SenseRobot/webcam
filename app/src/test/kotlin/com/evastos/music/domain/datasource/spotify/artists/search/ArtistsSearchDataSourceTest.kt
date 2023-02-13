@@ -194,4 +194,7 @@ class ArtistsSearchDataSourceTest {
         artistsSearchDataSource.retryAllFailed()
 
         verify(loadingStateObserver, times(4)).onChanged(check {
-            assertNotN
+            assertNotNull(it)
+        })
+        verify(loadCallback).onResult(TestUtil.artistList2, 1)
+        verify(spotifyService, times(2)).s
