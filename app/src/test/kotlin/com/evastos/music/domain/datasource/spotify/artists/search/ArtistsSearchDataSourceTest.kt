@@ -202,4 +202,11 @@ class ArtistsSearchDataSourceTest {
             check {
                 assertEquals("artist", it.toString())
             },
-     
+            eq("from_token"),
+            eq(20),
+            eq(0)
+        )
+    }
+
+    @Test
+    fun retryAllFailed_withLoadInitial_with
