@@ -214,4 +214,9 @@ class ArtistsSearchDataSourceTest {
                 .thenReturn(Single.just(TestUtil.searchResponse))
         artistsSearchDataSource.loadInitial(loadInitialParams, loadInitialCallback)
 
-        artistsSearchD
+        artistsSearchDataSource.retryAllFailed()
+
+        verify(loadingStateObserver, times(2)).onChanged(check {
+            assertNotNull(it)
+        })
+        verify(l
