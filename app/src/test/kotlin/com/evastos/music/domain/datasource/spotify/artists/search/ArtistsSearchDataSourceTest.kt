@@ -228,3 +228,9 @@ class ArtistsSearchDataSourceTest {
             eq("from_token"),
             eq(20),
             eq(0)
+        )
+    }
+
+    @Test
+    fun retryAllFailed_withLoadInitial_withErrorResponse_doesRetry() {
+        whenever(spotifyServic
