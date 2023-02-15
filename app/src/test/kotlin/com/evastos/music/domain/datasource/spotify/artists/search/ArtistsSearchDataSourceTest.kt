@@ -219,4 +219,7 @@ class ArtistsSearchDataSourceTest {
         verify(loadingStateObserver, times(2)).onChanged(check {
             assertNotNull(it)
         })
-        verify(l
+        verify(loadInitialCallback).onResult(TestUtil.artistList2, -1, 1)
+        verify(spotifyService).search(
+            eq("Iceage*"),
+          
