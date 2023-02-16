@@ -233,4 +233,6 @@ class ArtistsSearchDataSourceTest {
 
     @Test
     fun retryAllFailed_withLoadInitial_withErrorResponse_doesRetry() {
-        whenever(spotifyServic
+        whenever(spotifyService.search(any(), any(), any(), any(), any()))
+                .thenReturn(Single.error(Throwable()))
+        artistsSearchDataSource.loadIni
