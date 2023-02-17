@@ -258,4 +258,7 @@ class ArtistsSearchDataSourceTest {
 
     private inner class TestNetworkConnectivityProvider : NetworkConnectivityProvider(mock()) {
         override fun isConnected(): Boolean {
-            return networkIsConne
+            return networkIsConnected
+        }
+    }
+}
