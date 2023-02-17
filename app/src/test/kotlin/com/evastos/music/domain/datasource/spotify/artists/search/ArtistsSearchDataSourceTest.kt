@@ -249,4 +249,11 @@ class ArtistsSearchDataSourceTest {
             eq("Iceage*"),
             check {
                 assertEquals("artist", it.toString())
-    
+            },
+            eq("from_token"),
+            eq(20),
+            eq(0)
+        )
+    }
+
+    private inner class TestNetworkConn
