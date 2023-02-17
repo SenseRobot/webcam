@@ -245,4 +245,8 @@ class ArtistsSearchDataSourceTest {
             assertNotNull(it)
         })
         verify(loadInitialCallback).onResult(TestUtil.artistList2, -1, 1)
- 
+        verify(spotifyService, times(2)).search(
+            eq("Iceage*"),
+            check {
+                assertEquals("artist", it.toString())
+    
