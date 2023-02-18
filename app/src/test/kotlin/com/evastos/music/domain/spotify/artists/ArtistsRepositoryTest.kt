@@ -126,3 +126,15 @@ class ArtistsRepositoryTest {
 
     @Test
     fun getArtistSuggestions_withSuccess_postsArtistSuggestions() {
+        artistsRepository.getArtistSuggestions("Heist", CompositeDisposable())
+                .observeForever(artistSuggestionsLiveDataObserver)
+
+        verify(artistSuggestionsLiveDataObserver).onChanged(TestUtil.artistList2)
+    }
+
+    private inner class TestNetworkConnectivityProvider : NetworkConnectivityProvider(mock()) {
+        override fun isConnected(): Boolean {
+            return true
+        }
+    }
+}
