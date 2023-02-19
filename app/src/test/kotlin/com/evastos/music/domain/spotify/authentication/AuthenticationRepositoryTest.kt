@@ -112,3 +112,110 @@ class AuthenticationRepositoryTest {
         authenticationRepository.authenticateOrGetUser()
 
         verify(authErrorObserver).onChanged(isNull())
+        verifyNoMoreInteractions(authRequestObserver)
+    }
+
+    @Test
+    fun handleAuthResponse_withToken_withUserSuccess_postsUser() {
+        whenever(spotifyService.getUser()).thenReturn(Single.just(TestUtil.user))
+        whenever(exceptionMapper.map(any())).thenReturn(SpotifyException.ClientException())
+
+        authenticationRepository.handleAuthResponse(
+            getAuthResponse(AuthenticationResponse.Type.TOKEN, "token"), CompositeDisposable()
+        )
+
+        verify(userObserver).onChanged(TestUtil.user)
+        verifyNoMoreInteractions(authErrorObserver)
+    }
+
+    @Test
+    fun handleAuthResponse_withToken_withUserError_postsError() {
+        whenever(spotifyService.getUser()).thenReturn(Single.error(Throwable()))
+        whenever(exceptionMapper.map(any())).thenReturn(SpotifyException.ClientException())
+        whenever(exceptionMessageProvider.getMessage(any())).thenReturn("error_message")
+        whenever(exceptionMessageProvider.getMessage(any<Throwable>()))
+                .thenReturn("error_message")
+
+        authenticationRepository.handleAuthResponse(
+            getAuthResponse(AuthenticationResponse.Type.TOKEN, "token"), CompositeDisposable()
+        )
+
+        verify(authErrorObserver).onChanged("error_message")
+        verifyNoMoreInteractions(userObserver)
+    }
+
+    @Test
+    fun handleAuthResponse_withCode_doesNothing() {
+        authenticationRepository.handleAuthResponse(
+            getAuthResponse(AuthenticationResponse.Type.CODE), CompositeDisposable()
+        )
+
+        verifyNoMoreInteractions(authErrorObserver)
+        verifyNoMoreInteractions(userObserver)
+    }
+
+    @Test
+    fun handleAuthResponse_withError_postsAuthError() {
+        whenever(exceptionMessageProvider.authErrorMessage).thenReturn("authErrorMessage")
+
+        authenticationRepository.handleAuthResponse(
+            getAuthResponse(AuthenticationResponse.Type.ERROR), CompositeDisposable()
+        )
+
+        verify(authErrorObserver).onChanged("authErrorMessage")
+    }
+
+    @Test
+    fun handleAuthResponse_withEmpty_authenticates() {
+        authenticationRepository.handleAuthResponse(
+            getAuthResponse(AuthenticationResponse.Type.EMPTY), CompositeDisposable()
+        )
+
+        verify(authRequestObserver).onChanged(check {
+            assertEquals(AuthenticationResponse.Type.TOKEN.name.toLowerCase(), it.responseType)
+        })
+        verifyNoMoreInteractions(authErrorObserver)
+        verifyNoMoreInteractions(userObserver)
+    }
+
+    @Test
+    fun handleAuthResponse_withUnknown_authenticates() {
+        authenticationRepository.handleAuthResponse(
+            getAuthResponse(AuthenticationResponse.Type.UNKNOWN), CompositeDisposable()
+        )
+
+        verify(authRequestObserver).onChanged(check {
+            assertEquals(AuthenticationResponse.Type.TOKEN.name.toLowerCase(), it.responseType)
+        })
+        verifyNoMoreInteractions(authErrorObserver)
+        verifyNoMoreInteractions(userObserver)
+    }
+
+    @Test
+    fun handleAuthResponse_withTypeNull_authenticates() {
+        authenticationRepository.handleAuthResponse(
+            getAuthResponse(null), CompositeDisposable()
+        )
+
+        verify(authRequestObserver).onChanged(check {
+            assertEquals(AuthenticationResponse.Type.TOKEN.name.toLowerCase(), it.responseType)
+        })
+        verifyNoMoreInteractions(authErrorObserver)
+        verifyNoMoreInteractions(userObserver)
+    }
+
+    private inner class TestDateTimeUtil : DateTimeUtil() {
+        override fun getNow(): Long {
+            return nowInMillis
+        }
+    }
+
+    private fun getAuthResponse(
+        type: AuthenticationResponse.Type?,
+        token: String? = null
+    ): AuthenticationResponse =
+            AuthenticationResponse.Builder()
+                    .setType(type)
+                    .setAccessToken(token)
+                    .build()
+}
