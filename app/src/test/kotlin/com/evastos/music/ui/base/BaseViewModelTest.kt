@@ -9,4 +9,13 @@ import com.nhaarman.mockito_kotlin.verify
 import com.nhaarman.mockito_kotlin.verifyNoMoreInteractions
 import org.junit.Before
 import org.junit.Rule
-imp
+import org.junit.Test
+
+class BaseViewModelTest {
+
+    @Rule
+    @JvmField
+    var testSchedulerRule = RxImmediateSchedulerRule()
+
+    @Rule
+ 
