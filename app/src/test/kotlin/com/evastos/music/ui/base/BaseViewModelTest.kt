@@ -18,4 +18,7 @@ class BaseViewModelTest {
     var testSchedulerRule = RxImmediateSchedulerRule()
 
     @Rule
- 
+    @JvmField
+    val rule = InstantTaskExecutorRule()
+
+    private val networkConnectivityRelay = PublishRelay.create<Boolean>()
