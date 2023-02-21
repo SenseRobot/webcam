@@ -27,3 +27,9 @@ class BaseViewModelTest {
     private lateinit var viewModel: TestViewModel
 
     @Before
+    fun setUp() {
+        viewModel = TestViewModel()
+    }
+
+    @Test
+    fun getNetworkConnectivityLiveData_withNetwor
