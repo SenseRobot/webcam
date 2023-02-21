@@ -22,3 +22,8 @@ class BaseViewModelTest {
     val rule = InstantTaskExecutorRule()
 
     private val networkConnectivityRelay = PublishRelay.create<Boolean>()
+    private val connectivityAction = mock<(Boolean) -> Unit>()
+
+    private lateinit var viewModel: TestViewModel
+
+    @Before
