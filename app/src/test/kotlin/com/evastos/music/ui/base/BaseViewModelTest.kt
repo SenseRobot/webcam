@@ -35,4 +35,7 @@ class BaseViewModelTest {
     fun getNetworkConnectivityLiveData_withNetworkConnectivityEvents_invokesDistinctValues() {
         viewModel.onCreate(networkConnectivityRelay, connectivityAction)
 
+        networkConnectivityRelay.accept(true)
+        networkConnectivityRelay.accept(true)
+        networkConnectivityRelay.accept(false)
         networkConnectivity
