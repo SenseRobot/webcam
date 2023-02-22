@@ -38,4 +38,8 @@ class BaseViewModelTest {
         networkConnectivityRelay.accept(true)
         networkConnectivityRelay.accept(true)
         networkConnectivityRelay.accept(false)
-        networkConnectivity
+        networkConnectivityRelay.accept(true)
+        networkConnectivityRelay.accept(false)
+        networkConnectivityRelay.accept(false)
+
+     
