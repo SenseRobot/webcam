@@ -32,4 +32,7 @@ class BaseViewModelTest {
     }
 
     @Test
-    fun getNetworkConnectivityLiveData_withNetwor
+    fun getNetworkConnectivityLiveData_withNetworkConnectivityEvents_invokesDistinctValues() {
+        viewModel.onCreate(networkConnectivityRelay, connectivityAction)
+
+        networkConnectivity
