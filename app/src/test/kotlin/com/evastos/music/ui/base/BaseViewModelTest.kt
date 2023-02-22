@@ -42,4 +42,8 @@ class BaseViewModelTest {
         networkConnectivityRelay.accept(false)
         networkConnectivityRelay.accept(false)
 
-     
+        verify(connectivityAction, times(2)).invoke(true)
+        verify(connectivityAction, times(2)).invoke(false)
+    }
+
+    @Test
