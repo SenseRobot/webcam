@@ -53,4 +53,5 @@ class BaseViewModelTest {
         verifyNoMoreInteractions(connectivityAction)
     }
 
-    
+    private inner class TestViewModel : BaseViewModel()
+}
