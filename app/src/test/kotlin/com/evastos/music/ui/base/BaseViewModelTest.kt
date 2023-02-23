@@ -47,3 +47,5 @@ class BaseViewModelTest {
     }
 
     @Test
+    fun getNetworkConnectivityLiveData_withNoNetworkConnectivityEvents_doesNotInvokeAnything() {
+        viewModel.onCr
