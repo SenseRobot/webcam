@@ -3,4 +3,7 @@ package com.evastos.music.ui.spotify.artists
 import android.arch.core.executor.testing.InstantTaskExecutorRule
 import android.arch.lifecycle.MutableLiveData
 import android.arch.lifecycle.Observer
-import android
+import android.arch.paging.PagedList
+import com.evastos.music.RxImmediateSchedulerRule
+import com.evastos.music.TestUtil
+import com.evastos.music.data.mod
