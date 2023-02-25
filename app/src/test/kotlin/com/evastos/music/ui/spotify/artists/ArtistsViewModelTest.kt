@@ -9,4 +9,6 @@ import com.evastos.music.TestUtil
 import com.evastos.music.data.model.spotify.item.artist.Artist
 import com.evastos.music.domain.Repositories
 import com.evastos.music.domain.livedata.LoadingState
-import
+import com.jakewharton.rxrelay2.PublishRelay
+import com.nhaarman.mockito_kotlin.any
+import com.nhaarman.mockito_kotl
