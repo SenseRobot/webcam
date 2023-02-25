@@ -6,4 +6,7 @@ import android.arch.lifecycle.Observer
 import android.arch.paging.PagedList
 import com.evastos.music.RxImmediateSchedulerRule
 import com.evastos.music.TestUtil
-import com.evastos.music.data.mod
+import com.evastos.music.data.model.spotify.item.artist.Artist
+import com.evastos.music.domain.Repositories
+import com.evastos.music.domain.livedata.LoadingState
+import
