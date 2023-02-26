@@ -11,4 +11,7 @@ import com.evastos.music.domain.Repositories
 import com.evastos.music.domain.livedata.LoadingState
 import com.jakewharton.rxrelay2.PublishRelay
 import com.nhaarman.mockito_kotlin.any
-import com.nhaarman.mockito_kotl
+import com.nhaarman.mockito_kotlin.check
+import com.nhaarman.mockito_kotlin.eq
+import com.nhaarman.mockito_kotlin.isNull
+import com.nhaarman.mockito_kotlin.mo
