@@ -29,4 +29,10 @@ class ArtistsViewModelTest {
 
     @Rule
     @JvmField
-    var testSche
+    var testSchedulerRule = RxImmediateSchedulerRule()
+
+    @Rule
+    @JvmField
+    val rule = InstantTaskExecutorRule()
+
+    private val rep
