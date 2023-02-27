@@ -17,4 +17,8 @@ import com.nhaarman.mockito_kotlin.isNull
 import com.nhaarman.mockito_kotlin.mock
 import com.nhaarman.mockito_kotlin.never
 import com.nhaarman.mockito_kotlin.reset
-import com.nhaarman.mockito_kotlin.verif
+import com.nhaarman.mockito_kotlin.verify
+import com.nhaarman.mockito_kotlin.whenever
+import org.junit.After
+import org.junit.Assert.assertEquals
+import org.junit.Befor
