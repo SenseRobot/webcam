@@ -35,4 +35,7 @@ class ArtistsViewModelTest {
     @JvmField
     val rule = InstantTaskExecutorRule()
 
-    private val rep
+    private val repository = mock<Repositories.Spotify.Artists>()
+
+    private val artistsLiveDataObserver = mock<Observer<PagedList<Artist>>>()
+    pr
