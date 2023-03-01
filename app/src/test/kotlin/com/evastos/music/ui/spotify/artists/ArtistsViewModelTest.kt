@@ -38,4 +38,5 @@ class ArtistsViewModelTest {
     private val repository = mock<Repositories.Spotify.Artists>()
 
     private val artistsLiveDataObserver = mock<Observer<PagedList<Artist>>>()
-    pr
+    private val loadingStateLiveDataObserver = mock<Observer<LoadingState>>()
+    private val artistSuggestionsLi
