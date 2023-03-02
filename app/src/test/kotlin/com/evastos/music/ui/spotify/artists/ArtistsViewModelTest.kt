@@ -45,4 +45,9 @@ class ArtistsViewModelTest {
     private val networkConnectivityBannerObserver = mock<Observer<Boolean>>()
 
     private val networkConnectivityRelay = PublishRelay.create<Boolean>()
-    private
+    private val artistSearchLiveData = MutableLiveData<String>()
+
+    private lateinit var viewModel: ArtistsViewModel
+
+    @Before
+    fun setUp
