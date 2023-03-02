@@ -39,4 +39,5 @@ class ArtistsViewModelTest {
 
     private val artistsLiveDataObserver = mock<Observer<PagedList<Artist>>>()
     private val loadingStateLiveDataObserver = mock<Observer<LoadingState>>()
-    private val artistSuggestionsLi
+    private val artistSuggestionsLiveDataObserver = mock<Observer<List<Artist>>>()
+    private val artistDetailsLiveDataObserver = mock<Observer<A
