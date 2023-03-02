@@ -42,4 +42,7 @@ class ArtistsViewModelTest {
     private val artistSuggestionsLiveDataObserver = mock<Observer<List<Artist>>>()
     private val artistDetailsLiveDataObserver = mock<Observer<Artist>>()
     private val artistSearchLiveDataObserver = mock<Observer<String>>()
-    private val networkConnectivityBannerO
+    private val networkConnectivityBannerObserver = mock<Observer<Boolean>>()
+
+    private val networkConnectivityRelay = PublishRelay.create<Boolean>()
+    private
