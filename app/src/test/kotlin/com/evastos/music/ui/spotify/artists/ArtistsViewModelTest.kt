@@ -53,4 +53,6 @@ class ArtistsViewModelTest {
     fun setUp() {
         whenever(repository.searchArtists(isNull(), any()))
                 .thenReturn(TestUtil.artistsListing1)
-        whenever(rep
+        whenever(repository.searchArtists(eq("Interpol"), any()))
+                .thenReturn(TestUtil.artistsListing2)
+        whenever(
