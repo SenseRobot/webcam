@@ -50,4 +50,7 @@ class ArtistsViewModelTest {
     private lateinit var viewModel: ArtistsViewModel
 
     @Before
-    fun setUp
+    fun setUp() {
+        whenever(repository.searchArtists(isNull(), any()))
+                .thenReturn(TestUtil.artistsListing1)
+        whenever(rep
