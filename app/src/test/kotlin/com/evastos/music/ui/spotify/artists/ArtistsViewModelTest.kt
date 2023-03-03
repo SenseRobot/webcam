@@ -55,4 +55,7 @@ class ArtistsViewModelTest {
                 .thenReturn(TestUtil.artistsListing1)
         whenever(repository.searchArtists(eq("Interpol"), any()))
                 .thenReturn(TestUtil.artistsListing2)
-        whenever(
+        whenever(repository.searchArtists(eq("No Rome"), any()))
+                .thenReturn(TestUtil.artistsListing3)
+
+        whenever(repository.getArt
