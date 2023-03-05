@@ -63,4 +63,7 @@ class ArtistsViewModelTest {
         whenever(repository.getArtistSuggestions(eq("Nothing"), any()))
                 .thenReturn(TestUtil.artistSuggestions2)
 
-        whenever(repository.
+        whenever(repository.artistSearchLiveData).thenReturn(artistSearchLiveData)
+
+        viewModel = ArtistsViewModel(repository)
+        viewModel.artistsLiveData
