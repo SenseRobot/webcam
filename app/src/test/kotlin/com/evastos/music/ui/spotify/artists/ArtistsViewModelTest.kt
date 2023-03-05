@@ -66,4 +66,5 @@ class ArtistsViewModelTest {
         whenever(repository.artistSearchLiveData).thenReturn(artistSearchLiveData)
 
         viewModel = ArtistsViewModel(repository)
-        viewModel.artistsLiveData
+        viewModel.artistsLiveData.observeForever(artistsLiveDataObserver)
+        viewModel.loadingStateLiveData.observeForever(loadingStateLiveDataObserver)
