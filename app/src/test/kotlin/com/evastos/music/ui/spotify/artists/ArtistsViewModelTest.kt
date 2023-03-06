@@ -68,3 +68,5 @@ class ArtistsViewModelTest {
         viewModel = ArtistsViewModel(repository)
         viewModel.artistsLiveData.observeForever(artistsLiveDataObserver)
         viewModel.loadingStateLiveData.observeForever(loadingStateLiveDataObserver)
+        viewModel.artistSuggestionsLiveData.observeForever(artistSuggestionsLiveDataObserver)
+        viewModel.artistDetailsLiveData.observeForever(artistDeta
