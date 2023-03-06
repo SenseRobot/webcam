@@ -71,4 +71,10 @@ class ArtistsViewModelTest {
         viewModel.artistSuggestionsLiveData.observeForever(artistSuggestionsLiveDataObserver)
         viewModel.artistDetailsLiveData.observeForever(artistDetailsLiveDataObserver)
         viewModel.artistSearchLiveData.observeForever(artistSearchLiveDataObserver)
-        viewModel.networkConnectivity
+        viewModel.networkConnectivityBannerLiveData
+                .observeForever(networkConnectivityBannerObserver)
+    }
+
+    @After
+    fun tearDown() {
+    
