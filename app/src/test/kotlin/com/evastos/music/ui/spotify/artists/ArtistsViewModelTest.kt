@@ -77,4 +77,7 @@ class ArtistsViewModelTest {
 
     @After
     fun tearDown() {
-    
+        reset(TestUtil.artistsRetry1)
+        reset(TestUtil.artistsRetry2)
+        reset(TestUtil.artistsRetry3)
+        reset(TestUtil.ar
