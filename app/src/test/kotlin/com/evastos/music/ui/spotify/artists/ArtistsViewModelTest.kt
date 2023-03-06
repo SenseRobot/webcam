@@ -69,4 +69,6 @@ class ArtistsViewModelTest {
         viewModel.artistsLiveData.observeForever(artistsLiveDataObserver)
         viewModel.loadingStateLiveData.observeForever(loadingStateLiveDataObserver)
         viewModel.artistSuggestionsLiveData.observeForever(artistSuggestionsLiveDataObserver)
-        viewModel.artistDetailsLiveData.observeForever(artistDeta
+        viewModel.artistDetailsLiveData.observeForever(artistDetailsLiveDataObserver)
+        viewModel.artistSearchLiveData.observeForever(artistSearchLiveDataObserver)
+        viewModel.networkConnectivity
