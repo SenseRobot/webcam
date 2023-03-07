@@ -80,4 +80,10 @@ class ArtistsViewModelTest {
         reset(TestUtil.artistsRetry1)
         reset(TestUtil.artistsRetry2)
         reset(TestUtil.artistsRetry3)
-        reset(TestUtil.ar
+        reset(TestUtil.artistsRefresh1)
+        reset(TestUtil.artistsRefresh2)
+        reset(TestUtil.artistsRefresh3)
+    }
+
+    @Test
+    fun init_
