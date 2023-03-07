@@ -86,4 +86,7 @@ class ArtistsViewModelTest {
     }
 
     @Test
-    fun init_
+    fun init_withInitialArtists_postsInitialArtists() {
+        initialLoad()
+
+        verify(artistsLiveDataObserver).onChanged(TestUtil.art
