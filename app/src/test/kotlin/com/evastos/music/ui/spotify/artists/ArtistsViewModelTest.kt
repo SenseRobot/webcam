@@ -96,4 +96,7 @@ class ArtistsViewModelTest {
 
     @Test
     fun init_withInitialArtists_doesNotPostSuggestionsAndArtistDetails() {
-   
+        initialLoad()
+
+        verify(artistSuggestionsLiveDataObserver, never()).onChanged(any())
+        verify(artistDetailsLiveDataObserver, never()).o
