@@ -91,4 +91,9 @@ class ArtistsViewModelTest {
 
         verify(artistsLiveDataObserver).onChanged(TestUtil.artistPagedList1)
         verify(loadingStateLiveDataObserver).onChanged(TestUtil.loading)
-        verify(loadingStateLiveDataObserve
+        verify(loadingStateLiveDataObserver).onChanged(TestUtil.success)
+    }
+
+    @Test
+    fun init_withInitialArtists_doesNotPostSuggestionsAndArtistDetails() {
+   
