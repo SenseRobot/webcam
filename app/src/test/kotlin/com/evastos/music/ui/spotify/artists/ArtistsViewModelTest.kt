@@ -99,4 +99,11 @@ class ArtistsViewModelTest {
         initialLoad()
 
         verify(artistSuggestionsLiveDataObserver, never()).onChanged(any())
-        verify(artistDetailsLiveDataObserver, never()).o
+        verify(artistDetailsLiveDataObserver, never()).onChanged(any())
+    }
+
+    @Test
+    fun onRetry_withInitialArtists_retriesSearchArtists() {
+        initialLoad()
+
+  
