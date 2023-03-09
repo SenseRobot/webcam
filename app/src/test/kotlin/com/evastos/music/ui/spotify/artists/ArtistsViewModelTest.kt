@@ -109,4 +109,10 @@ class ArtistsViewModelTest {
         viewModel.onRetry()
 
         verify(TestUtil.artistsRetry1).invoke()
-        verify(TestUtil.artistsRetry2, never()).in
+        verify(TestUtil.artistsRetry2, never()).invoke()
+    }
+
+    @Test
+    fun onRetry_withSearchedArtists_retriesSearchArtists() {
+        initialLoad()
+        viewModel.onSearchQuerySu
