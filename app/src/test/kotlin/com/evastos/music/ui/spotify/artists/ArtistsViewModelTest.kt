@@ -115,4 +115,9 @@ class ArtistsViewModelTest {
     @Test
     fun onRetry_withSearchedArtists_retriesSearchArtists() {
         initialLoad()
-        viewModel.onSearchQuerySu
+        viewModel.onSearchQuerySubmit("Interpol")
+
+        viewModel.onRetry()
+
+        verify(TestUtil.artistsRetry2).invoke()
+        verify(TestUtil.artists
