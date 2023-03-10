@@ -127,4 +127,10 @@ class ArtistsViewModelTest {
     fun onRefresh_withInitialArtists_refreshesInitialArtists() {
         initialLoad()
 
-        viewModel.onRef
+        viewModel.onRefresh()
+
+        verify(TestUtil.artistsRefresh1).invoke()
+        verify(TestUtil.artistsRefresh2, never()).invoke()
+    }
+
+    
