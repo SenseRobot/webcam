@@ -120,4 +120,11 @@ class ArtistsViewModelTest {
         viewModel.onRetry()
 
         verify(TestUtil.artistsRetry2).invoke()
-        verify(TestUtil.artists
+        verify(TestUtil.artistsRetry1, never()).invoke()
+    }
+
+    @Test
+    fun onRefresh_withInitialArtists_refreshesInitialArtists() {
+        initialLoad()
+
+        viewModel.onRef
