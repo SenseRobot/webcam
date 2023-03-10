@@ -138,4 +138,10 @@ class ArtistsViewModelTest {
         initialLoad()
         viewModel.onSearchQuerySubmit("Interpol")
 
-        
+        viewModel.onRefresh()
+
+        verify(TestUtil.artistsRefresh2).invoke()
+        verify(TestUtil.artistsRefresh1, never()).invoke()
+    }
+
+    
