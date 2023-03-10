@@ -133,4 +133,9 @@ class ArtistsViewModelTest {
         verify(TestUtil.artistsRefresh2, never()).invoke()
     }
 
-    
+    @Test
+    fun onRefresh_withSearchedArtists_refreshesSearchedArtists() {
+        initialLoad()
+        viewModel.onSearchQuerySubmit("Interpol")
+
+        
