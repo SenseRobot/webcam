@@ -150,3 +150,5 @@ class ArtistsViewModelTest {
 
         viewModel.onSearchQuerySubmit("Interpol")
 
+        verify(artistsLiveDataObserver).onChanged(TestUtil.artistPagedList2)
+        verify(loadingStateLiveDataObserver).onChanged(TestUtil.
