@@ -156,4 +156,8 @@ class ArtistsViewModelTest {
     }
 
     @Test
-    fun onSearchQuerySubm
+    fun onSearchQuerySubmitTwice_postsNextSearchedArtistList() {
+        initialLoad()
+
+        viewModel.onSearchQuerySubmit("Interpol")
+        viewModel.onSearchQuery
