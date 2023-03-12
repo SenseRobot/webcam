@@ -163,4 +163,8 @@ class ArtistsViewModelTest {
         viewModel.onSearchQuerySubmit("No Rome")
 
         verify(artistsLiveDataObserver).onChanged(TestUtil.artistPagedList2)
-        verif
+        verify(artistsLiveDataObserver).onChanged(TestUtil.artistPagedList3)
+    }
+
+    @Test
+    fun onSearchQuerySubmit_doesNotPostSug
