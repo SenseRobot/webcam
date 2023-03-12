@@ -160,4 +160,7 @@ class ArtistsViewModelTest {
         initialLoad()
 
         viewModel.onSearchQuerySubmit("Interpol")
-        viewModel.onSearchQuery
+        viewModel.onSearchQuerySubmit("No Rome")
+
+        verify(artistsLiveDataObserver).onChanged(TestUtil.artistPagedList2)
+        verif
