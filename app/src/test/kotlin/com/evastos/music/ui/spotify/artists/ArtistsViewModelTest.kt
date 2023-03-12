@@ -167,4 +167,9 @@ class ArtistsViewModelTest {
     }
 
     @Test
-    fun onSearchQuerySubmit_doesNotPostSug
+    fun onSearchQuerySubmit_doesNotPostSuggestionsAndArtistDetails() {
+        initialLoad()
+
+        viewModel.onSearchQuerySubmit("No Rome")
+
+        verify(artistDetailsLiveData
