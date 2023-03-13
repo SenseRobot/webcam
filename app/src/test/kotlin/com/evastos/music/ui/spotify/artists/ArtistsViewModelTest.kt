@@ -172,4 +172,8 @@ class ArtistsViewModelTest {
 
         viewModel.onSearchQuerySubmit("No Rome")
 
-        verify(artistDetailsLiveData
+        verify(artistDetailsLiveDataObserver, never()).onChanged(any())
+        verify(artistDetailsLiveDataObserver, never()).onChanged(any())
+    }
+
+    @
