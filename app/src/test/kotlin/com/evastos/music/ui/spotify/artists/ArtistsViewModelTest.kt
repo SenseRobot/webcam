@@ -176,4 +176,10 @@ class ArtistsViewModelTest {
         verify(artistDetailsLiveDataObserver, never()).onChanged(any())
     }
 
-    @
+    @Test
+    fun onSearchQueryChange_postsArtistSuggestions() {
+        initialLoad()
+
+        viewModel.onSearchQueryChange("Not")
+
+        verif
