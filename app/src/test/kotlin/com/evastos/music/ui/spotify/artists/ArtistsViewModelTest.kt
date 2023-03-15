@@ -182,4 +182,6 @@ class ArtistsViewModelTest {
 
         viewModel.onSearchQueryChange("Not")
 
-        verif
+        verify(artistSuggestionsLiveDataObserver).onChanged(check { suggestions ->
+            assertEquals(1, suggestions.size)
+     
