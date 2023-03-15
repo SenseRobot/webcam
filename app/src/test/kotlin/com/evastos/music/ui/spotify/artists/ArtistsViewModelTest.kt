@@ -189,4 +189,8 @@ class ArtistsViewModelTest {
     }
 
     @Test
-    fun onSearchQueryChange_withSecondChange_
+    fun onSearchQueryChange_withSecondChange_postsNextArtistSuggestions() {
+        initialLoad()
+
+        viewModel.onSearchQueryChange("Not")
+        viewModel.on
