@@ -184,4 +184,9 @@ class ArtistsViewModelTest {
 
         verify(artistSuggestionsLiveDataObserver).onChanged(check { suggestions ->
             assertEquals(1, suggestions.size)
-     
+            assertEquals(TestUtil.artist, suggestions[0])
+        })
+    }
+
+    @Test
+    fun onSearchQueryChange_withSecondChange_
