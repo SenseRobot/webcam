@@ -214,4 +214,8 @@ class ArtistsViewModelTest {
 
         viewModel.artistSearchLiveData.postValue("New search")
 
-  
+        verify(artistSearchLiveDataObserver).onChanged("New search")
+    }
+
+    @Test
+    fun onCreate_withNoNetwork_postsNetworkConnectiv
