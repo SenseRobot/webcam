@@ -196,4 +196,11 @@ class ArtistsViewModelTest {
         viewModel.onSearchQueryChange("Nothing")
 
         verify(artistSuggestionsLiveDataObserver).onChanged(TestUtil.artistList1)
-        verify(artistSuggestion
+        verify(artistSuggestionsLiveDataObserver).onChanged(TestUtil.artistList2)
+    }
+
+    @Test
+    fun onArtistClick_postsArtistDetails() {
+        initialLoad()
+
+        v
