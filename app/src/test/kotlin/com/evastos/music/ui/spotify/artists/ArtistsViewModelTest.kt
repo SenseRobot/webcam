@@ -209,4 +209,9 @@ class ArtistsViewModelTest {
     }
 
     @Test
-    fun onArtistSear
+    fun onArtistSearchValue_postsArtistSearch() {
+        initialLoad()
+
+        viewModel.artistSearchLiveData.postValue("New search")
+
+  
