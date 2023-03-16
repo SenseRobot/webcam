@@ -203,4 +203,10 @@ class ArtistsViewModelTest {
     fun onArtistClick_postsArtistDetails() {
         initialLoad()
 
-        v
+        viewModel.onArtistClick(TestUtil.artist)
+
+        verify(artistDetailsLiveDataObserver).onChanged(TestUtil.artist)
+    }
+
+    @Test
+    fun onArtistSear
