@@ -227,4 +227,9 @@ class ArtistsViewModelTest {
     }
 
     @Test
-    fun onCreate_withNetwork_postsNetworkConnectivityBannerNotV
+    fun onCreate_withNetwork_postsNetworkConnectivityBannerNotVisible() {
+        viewModel.onCreate(networkConnectivityRelay)
+
+        networkConnectivityRelay.accept(true)
+
+     
