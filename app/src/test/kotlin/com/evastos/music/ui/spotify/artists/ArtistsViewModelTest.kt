@@ -232,4 +232,8 @@ class ArtistsViewModelTest {
 
         networkConnectivityRelay.accept(true)
 
-     
+        verify(networkConnectivityBannerObserver).onChanged(false)
+    }
+
+    private fun initialLoad() {
+        TestUtil.artists1.value =
