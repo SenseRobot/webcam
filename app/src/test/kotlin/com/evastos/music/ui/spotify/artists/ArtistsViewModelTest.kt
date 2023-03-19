@@ -241,4 +241,7 @@ class ArtistsViewModelTest {
         TestUtil.artistsLoadingState1.value = TestUtil.success
 
         TestUtil.artists2.value = TestUtil.artistPagedList2
-        TestUtil.artistsLoadingSta
+        TestUtil.artistsLoadingState2.value = TestUtil.loading
+        TestUtil.artistsLoadingState2.value = TestUtil.error
+
+        TestUtil.artis
