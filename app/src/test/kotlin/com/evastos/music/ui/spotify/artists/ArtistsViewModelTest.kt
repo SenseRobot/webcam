@@ -238,4 +238,7 @@ class ArtistsViewModelTest {
     private fun initialLoad() {
         TestUtil.artists1.value = TestUtil.artistPagedList1
         TestUtil.artistsLoadingState1.value = TestUtil.loading
-        TestUtil.artistsLoa
+        TestUtil.artistsLoadingState1.value = TestUtil.success
+
+        TestUtil.artists2.value = TestUtil.artistPagedList2
+        TestUtil.artistsLoadingSta
