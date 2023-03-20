@@ -249,4 +249,6 @@ class ArtistsViewModelTest {
         TestUtil.artistsLoadingState3.value = TestUtil.success
 
         TestUtil.artistSuggestions1.value = TestUtil.artistList1
-        TestUtil.artistSuggestions2.value = TestUtil.artis
+        TestUtil.artistSuggestions2.value = TestUtil.artistList2
+    }
+}
