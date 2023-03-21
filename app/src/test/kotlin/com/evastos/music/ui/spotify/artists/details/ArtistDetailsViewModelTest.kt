@@ -7,4 +7,12 @@ import com.evastos.music.TestUtil
 import com.jakewharton.rxrelay2.PublishRelay
 import com.nhaarman.mockito_kotlin.mock
 import com.nhaarman.mockito_kotlin.verify
-import org.ju
+import org.junit.Before
+import org.junit.Rule
+import org.junit.Test
+
+class ArtistDetailsViewModelTest {
+
+    @Rule
+    @JvmField
+    var tes
