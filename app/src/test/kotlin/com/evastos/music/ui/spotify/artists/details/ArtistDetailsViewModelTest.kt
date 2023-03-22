@@ -15,4 +15,10 @@ class ArtistDetailsViewModelTest {
 
     @Rule
     @JvmField
-    var tes
+    var testSchedulerRule = RxImmediateSchedulerRule()
+
+    @Rule
+    @JvmField
+    val rule = InstantTaskExecutorRule()
+
+    private val artistImageObserver = mock<Ob
