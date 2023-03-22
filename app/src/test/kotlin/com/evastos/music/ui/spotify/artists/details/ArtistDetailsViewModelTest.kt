@@ -21,4 +21,6 @@ class ArtistDetailsViewModelTest {
     @JvmField
     val rule = InstantTaskExecutorRule()
 
-    private val artistImageObserver = mock<Ob
+    private val artistImageObserver = mock<Observer<String>>()
+    private val artistNameObserver = mock<Observer<String>>()
+    private val artistGenresObserver = mock<Observer<
