@@ -28,4 +28,10 @@ class ArtistDetailsViewModelTest {
     private val artistExternalUrlObserver = mock<Observer<String>>()
     private val networkConnectivityBannerObserver = mock<Observer<Boolean>>()
 
-    private val networkConnectivityRelay = PublishRela
+    private val networkConnectivityRelay = PublishRelay.create<Boolean>()
+
+    private lateinit var viewModel: ArtistDetailsViewModel
+
+    @Before
+    fun setUp() {
+        viewModel = Arti
