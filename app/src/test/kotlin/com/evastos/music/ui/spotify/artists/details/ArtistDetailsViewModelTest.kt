@@ -34,4 +34,6 @@ class ArtistDetailsViewModelTest {
 
     @Before
     fun setUp() {
-        viewModel = Arti
+        viewModel = ArtistDetailsViewModel()
+        viewModel.imageLiveData.observeForever(artistImageObserver)
+        viewModel.nameLiveData.observeFore
