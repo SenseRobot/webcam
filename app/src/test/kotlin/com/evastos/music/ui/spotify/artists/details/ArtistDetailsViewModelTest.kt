@@ -25,4 +25,7 @@ class ArtistDetailsViewModelTest {
     private val artistNameObserver = mock<Observer<String>>()
     private val artistGenresObserver = mock<Observer<String>>()
     private val artistFollowersObserver = mock<Observer<Int>>()
-    private val artistExternalUrlObserver = mock<Observer<St
+    private val artistExternalUrlObserver = mock<Observer<String>>()
+    private val networkConnectivityBannerObserver = mock<Observer<Boolean>>()
+
+    private val networkConnectivityRelay = PublishRela
