@@ -36,4 +36,6 @@ class ArtistDetailsViewModelTest {
     fun setUp() {
         viewModel = ArtistDetailsViewModel()
         viewModel.imageLiveData.observeForever(artistImageObserver)
-        viewModel.nameLiveData.observeFore
+        viewModel.nameLiveData.observeForever(artistNameObserver)
+        viewModel.genresLiveData.observeForever(artistGenresObserver)
+        viewModel.followersLiveData.observeForever(artis
