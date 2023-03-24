@@ -38,4 +38,6 @@ class ArtistDetailsViewModelTest {
         viewModel.imageLiveData.observeForever(artistImageObserver)
         viewModel.nameLiveData.observeForever(artistNameObserver)
         viewModel.genresLiveData.observeForever(artistGenresObserver)
-        viewModel.followersLiveData.observeForever(artis
+        viewModel.followersLiveData.observeForever(artistFollowersObserver)
+        viewModel.externalUrlLiveData.observeForever(artistExternalUrlObserver)
+        viewModel.netw
