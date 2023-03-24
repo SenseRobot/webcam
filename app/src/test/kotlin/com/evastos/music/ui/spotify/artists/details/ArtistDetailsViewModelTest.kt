@@ -40,4 +40,9 @@ class ArtistDetailsViewModelTest {
         viewModel.genresLiveData.observeForever(artistGenresObserver)
         viewModel.followersLiveData.observeForever(artistFollowersObserver)
         viewModel.externalUrlLiveData.observeForever(artistExternalUrlObserver)
-        viewModel.netw
+        viewModel.networkConnectivityBannerLiveData
+                .observeForever(networkConnectivityBannerObserver)
+    }
+
+    @Test
+    fun onCreate_withArtist_postsAr
