@@ -45,4 +45,7 @@ class ArtistDetailsViewModelTest {
     }
 
     @Test
-    fun onCreate_withArtist_postsAr
+    fun onCreate_withArtist_postsArtistData() {
+        viewModel.onCreate(TestUtil.artist, networkConnectivityRelay)
+
+        verify(artistImageObserver).onChanged("image_url")
