@@ -49,3 +49,5 @@ class ArtistDetailsViewModelTest {
         viewModel.onCreate(TestUtil.artist, networkConnectivityRelay)
 
         verify(artistImageObserver).onChanged("image_url")
+        verify(artistNameObserver).onChanged("Iceage")
+        verify(artistGenresObserver).onChanged("indie, dreampo
