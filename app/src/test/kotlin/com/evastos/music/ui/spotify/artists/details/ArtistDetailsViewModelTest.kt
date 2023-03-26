@@ -61,4 +61,9 @@ class ArtistDetailsViewModelTest {
 
         networkConnectivityRelay.accept(false)
 
-        verify(networkConnectivi
+        verify(networkConnectivityBannerObserver).onChanged(true)
+    }
+
+    @Test
+    fun onCreate_withNetwork_postsNetworkConnectivityBannerNotVisible() {
+        v
