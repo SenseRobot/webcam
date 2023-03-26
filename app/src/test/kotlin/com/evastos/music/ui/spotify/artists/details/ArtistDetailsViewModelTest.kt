@@ -52,4 +52,9 @@ class ArtistDetailsViewModelTest {
         verify(artistNameObserver).onChanged("Iceage")
         verify(artistGenresObserver).onChanged("indie, dreampop, shoegaze")
         verify(artistFollowersObserver).onChanged(82773)
-        verify(artistExternalUrlObserver).onChanged("exte
+        verify(artistExternalUrlObserver).onChanged("external_url_spotify")
+    }
+
+    @Test
+    fun onCreate_withNoNetwork_postsNetworkConnectivityBannerVisible() {
+        viewMod
