@@ -50,4 +50,6 @@ class ArtistDetailsViewModelTest {
 
         verify(artistImageObserver).onChanged("image_url")
         verify(artistNameObserver).onChanged("Iceage")
-        verify(artistGenresObserver).onChanged("indie, dreampo
+        verify(artistGenresObserver).onChanged("indie, dreampop, shoegaze")
+        verify(artistFollowersObserver).onChanged(82773)
+        verify(artistExternalUrlObserver).onChanged("exte
