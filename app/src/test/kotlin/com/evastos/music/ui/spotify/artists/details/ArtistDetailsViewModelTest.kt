@@ -70,4 +70,6 @@ class ArtistDetailsViewModelTest {
 
         networkConnectivityRelay.accept(true)
 
-        verify(networkConne
+        verify(networkConnectivityBannerObserver).onChanged(false)
+    }
+}
