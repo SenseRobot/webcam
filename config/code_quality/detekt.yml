@@ -6,4 +6,12 @@ build:
      style: 1
      comments: 0
      empty-blocks: 1
-     e
+     exceptions: 0
+     naming: 1
+     performance: 1
+     potential-bugs: 1
+
+output-reports:
+  active: true
+  exclude:
+    - 'PlainOutputReport'
