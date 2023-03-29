@@ -1,0 +1,9 @@
+build:
+  maxIssues: 1
+  weights:
+     complexity: 1
+     LongParameterList: 1
+     style: 1
+     comments: 0
+     empty-blocks: 1
+     e
