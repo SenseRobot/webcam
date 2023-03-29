@@ -86,3 +86,48 @@ class AuthenticationViewModelTest {
     @Test
     fun onCreate_authenticatesOrGetsUser() {
         viewModel.onCreate(networkConnectivityRelay)
+
+        verify(repository).authenticateOrGetUser()
+    }
+
+    @Test
+    fun onCreate_withNetworkAcquired_authenticatesOrGetsUser() {
+        viewModel.onCreate(networkConnectivityRelay)
+
+        networkConnectivityRelay.accept(true)
+
+        verify(repository, times(2)).authenticateOrGetUser()
+    }
+
+    @Test
+    fun onRetry_authenticatesOrGetsUser() {
+        viewModel.onRetry()
+
+        verify(repository).authenticateOrGetUser()
+    }
+
+    @Test
+    fun onAuthResponse_repositoryHandlesAuthResponse() {
+        viewModel.onAuthResponse(authenticationResponse)
+
+        verify(repository).handleAuthResponse(eq(authenticationResponse), any())
+    }
+
+    @Test
+    fun onCreate_withNoNetwork_postsNetworkConnectivityBannerVisible() {
+        viewModel.onCreate(networkConnectivityRelay)
+
+        networkConnectivityRelay.accept(false)
+
+        verify(networkConnectivityBannerObserver).onChanged(true)
+    }
+
+    @Test
+    fun onCreate_withNetwork_postsNetworkConnectivityBannerNotVisible() {
+        viewModel.onCreate(networkConnectivityRelay)
+
+        networkConnectivityRelay.accept(true)
+
+        verify(networkConnectivityBannerObserver).onChanged(false)
+    }
+}
