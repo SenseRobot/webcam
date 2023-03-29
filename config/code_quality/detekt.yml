@@ -15,3 +15,13 @@ output-reports:
   active: true
   exclude:
     - 'PlainOutputReport'
+    - 'XmlOutputReport'
+
+comments:
+  active: false
+
+complexity:
+  active: true
+  ComplexCondition:
+    active: true
+    thresh
