@@ -24,4 +24,10 @@ complexity:
   active: true
   ComplexCondition:
     active: true
-    thresh
+    threshold: 4
+  ComplexInterface:
+    active: false
+    threshold: 10
+    includeStaticDeclarations: false
+  ComplexMethod:
+    acti
