@@ -30,4 +30,11 @@ complexity:
     threshold: 10
     includeStaticDeclarations: false
   ComplexMethod:
-    acti
+    active: true
+    threshold: 40
+    ignoreSingleWhenExpression: false
+  LabeledExpression:
+    active: false
+  LargeClass:
+    active: true
+    thres
