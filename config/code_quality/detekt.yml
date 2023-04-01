@@ -44,4 +44,11 @@ complexity:
   LongParameterList:
     active: false
     threshold: 6
-    ignore
+    ignoreDefaultParameters: false
+  MethodOverloading:
+    active: false
+    threshold: 6
+  NestedBlockDepth:
+    active: true
+    threshold: 4
+  StringLit
