@@ -51,4 +51,9 @@ complexity:
   NestedBlockDepth:
     active: true
     threshold: 4
-  StringLit
+  StringLiteralDuplication:
+    active: false
+    threshold: 3
+    ignoreAnnotation: true
+    excludeStringsWithLessThan5Characters: true
+    ignoreString
