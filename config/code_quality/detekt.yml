@@ -70,4 +70,10 @@ empty-blocks:
   EmptyCatchBlock:
     active: true
     ignoreOverriddenFunctions: false
-  Emp
+  EmptyClassBlock:
+    active: false
+  EmptyDefaultConstructor:
+    active: false
+  EmptyDoWhileBlock:
+    active: true
+  EmptyElse
