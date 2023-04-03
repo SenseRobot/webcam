@@ -62,4 +62,12 @@ complexity:
     thresholdInFiles: 30
     thresholdInClasses: 30
     thresholdInInterfaces: 30
-    thres
+    thresholdInObjects: 30
+    thresholdInEnums: 30
+
+empty-blocks:
+  active: true
+  EmptyCatchBlock:
+    active: true
+    ignoreOverriddenFunctions: false
+  Emp
