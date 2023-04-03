@@ -76,4 +76,11 @@ empty-blocks:
     active: false
   EmptyDoWhileBlock:
     active: true
-  EmptyElse
+  EmptyElseBlock:
+    active: true
+  EmptyFinallyBlock:
+    active: true
+  EmptyForBlock:
+    active: true
+  EmptyFunctionBlock:
+    activ
