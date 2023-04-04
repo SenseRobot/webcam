@@ -90,3 +90,10 @@ empty-blocks:
   EmptyInitBlock:
     active: true
   EmptyKtFile:
+    active: true
+  EmptySecondaryConstructor:
+    active: true
+  EmptyWhenBlock:
+    active: true
+  EmptyWhileBlock:
+    activ
