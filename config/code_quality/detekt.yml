@@ -83,4 +83,10 @@ empty-blocks:
   EmptyForBlock:
     active: true
   EmptyFunctionBlock:
-    activ
+    active: true
+    ignoreOverriddenFunctions: false
+  EmptyIfBlock:
+    active: true
+  EmptyInitBlock:
+    active: true
+  EmptyKtFile:
