@@ -117,4 +117,8 @@ naming:
     maximumFunctionNameLength: 30
   FunctionMinLength:
     active: false
-    minimumFuncti
+    minimumFunctionNameLength: 3
+  FunctionNaming:
+    active: true
+    functionPattern: '^([a-z$][a-zA-Z$0-9]*)|(`.*`)$'
+    exclud
