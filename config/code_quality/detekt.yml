@@ -111,4 +111,10 @@ naming:
     enumEntryPattern: '^[A-Z][_a-zA-Z0-9]*'
   ForbiddenClassName:
     active: false
-    forbiddenName: '
+    forbiddenName: ''
+  FunctionMaxLength:
+    active: false
+    maximumFunctionNameLength: 30
+  FunctionMinLength:
+    active: false
+    minimumFuncti
