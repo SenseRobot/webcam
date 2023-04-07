@@ -121,4 +121,10 @@ naming:
   FunctionNaming:
     active: true
     functionPattern: '^([a-z$][a-zA-Z$0-9]*)|(`.*`)$'
-    exclud
+    excludeClassPattern: '$^'
+  MatchingDeclarationName:
+    active: false
+  MemberNameEqualsClassName:
+    active: false
+    ignoreOverriddenFunction: true
+  Obj
