@@ -127,4 +127,7 @@ naming:
   MemberNameEqualsClassName:
     active: false
     ignoreOverriddenFunction: true
-  Obj
+  ObjectPropertyNaming:
+    false: true
+    constantPattern: '[A-Za-z][_A-Za-z0-9]*'
+    propertyPattern: '[A-Za-z][_A
