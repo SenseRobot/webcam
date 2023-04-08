@@ -134,4 +134,7 @@ naming:
     privatePropertyPattern: '[A-Za-z][_A-Za-z0-9]*'
   PackageNaming:
     active: true
-    packagePattern: '^[a-z]+
+    packagePattern: '^[a-z]+(\.[a-z][a-z0-9]*)*$'
+  TopLevelPropertyNaming:
+    active: false # it messes with const val's for non-primitives
+    constantPatter
