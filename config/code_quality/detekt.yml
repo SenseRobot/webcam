@@ -137,4 +137,8 @@ naming:
     packagePattern: '^[a-z]+(\.[a-z][a-z0-9]*)*$'
   TopLevelPropertyNaming:
     active: false # it messes with const val's for non-primitives
-    constantPatter
+    constantPattern: '[A-Z][_A-Z0-9]*'
+    propertyPattern: '[a-z][A-Za-z\d]*'
+    privatePropertyPattern: '(_)?[a-z][A-Za-z0-9]*'
+  VariableMaxLength:
+    active:
