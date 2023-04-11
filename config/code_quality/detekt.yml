@@ -165,4 +165,9 @@ potential-bugs:
   active: true
   DuplicateCaseInWhenExpression:
     active: true
-  Equals
+  EqualsAlwaysReturnsTrueOrFalse:
+    active: true
+  EqualsWithHashCodeExist:
+    active: true
+  ExplicitGarbageCollectionCall:
+   
