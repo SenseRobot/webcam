@@ -181,4 +181,9 @@ potential-bugs:
     active: false
     excludeAnnotatedProperties: ""
     ignoreOnClassesPattern: ""
-  Unc
+  UnconditionalJumpStatementInLoop:
+    active: false
+  UnreachableCode:
+    active: true
+  UnsafeCallOnNullableType:
+    active: true
