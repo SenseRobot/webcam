@@ -175,4 +175,10 @@ potential-bugs:
     active: true
   IteratorHasNextCallsNextMethod:
     active: false
-  IteratorNotThrowingNoSuchElementE
+  IteratorNotThrowingNoSuchElementException:
+    active: false
+  LateinitUsage:
+    active: false
+    excludeAnnotatedProperties: ""
+    ignoreOnClassesPattern: ""
+  Unc
