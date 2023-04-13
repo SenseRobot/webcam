@@ -187,3 +187,13 @@ potential-bugs:
     active: true
   UnsafeCallOnNullableType:
     active: true
+  UnsafeCast:
+    active: true
+  UselessPostfixExpression:
+    active: false
+  WrongEqualsTypeParameter:
+    active: false
+
+style:
+  active: true
+  Coll
