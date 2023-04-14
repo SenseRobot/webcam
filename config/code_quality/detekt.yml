@@ -196,4 +196,8 @@ potential-bugs:
 
 style:
   active: true
-  Coll
+  CollapsibleIfStatements:
+    active: false
+  DataClassContainsFunctions:
+    active: false
+    conversionFunctionPrefix: '
