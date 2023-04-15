@@ -200,4 +200,11 @@ style:
     active: false
   DataClassContainsFunctions:
     active: false
-    conversionFunctionPrefix: '
+    conversionFunctionPrefix: 'to'
+  EqualsNullCall:
+    active: false
+  ExpressionBodySyntax:
+    active: false
+  ForbiddenComment:
+    active: false
+    values: 'TODO
