@@ -222,4 +222,8 @@ style:
     active: true
     ignoreNumbers: '-1,0,1,2'
     ignoreHashCodeFunction: false
-    ignorePropertyDecl
+    ignorePropertyDeclaration: false
+    ignoreConstantDeclaration: true
+    ignoreCompanionObjectPropertyDeclaration: true
+    ignoreAnnotation: false
+    ignoreNamed
