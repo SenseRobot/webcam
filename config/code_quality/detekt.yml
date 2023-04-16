@@ -217,4 +217,9 @@ style:
     excludedFunctions: 'describeContents'
   LoopWithTooManyJumpStatements:
     active: false
-    max
+    maxJumpCount: 1
+  MagicNumber:
+    active: true
+    ignoreNumbers: '-1,0,1,2'
+    ignoreHashCodeFunction: false
+    ignorePropertyDecl
