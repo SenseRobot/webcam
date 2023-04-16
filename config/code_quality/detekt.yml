@@ -213,4 +213,8 @@ style:
     imports: ''
   FunctionOnlyReturningConstant:
     active: true
-    ignoreOv
+    ignoreOverridableFunction: true
+    excludedFunctions: 'describeContents'
+  LoopWithTooManyJumpStatements:
+    active: false
+    max
