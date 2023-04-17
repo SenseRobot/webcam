@@ -226,4 +226,9 @@ style:
     ignoreConstantDeclaration: true
     ignoreCompanionObjectPropertyDeclaration: true
     ignoreAnnotation: false
-    ignoreNamed
+    ignoreNamedArgument: true
+    ignoreEnums: false
+  MaxLineLength:
+    active: true
+    maxLineLength: 140
+    excludePackageStatem
