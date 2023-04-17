@@ -246,4 +246,10 @@ style:
   OptionalAbstractKeyword:
     active: true
   OptionalUnit:
+    active: true
+  OptionalWhenBraces:
+    active: false
+  ProtectedMemberInFinalClass:
+    active: false
+  RedundantVisibilityModifierRule:
   
