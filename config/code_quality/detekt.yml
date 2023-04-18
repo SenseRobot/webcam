@@ -252,4 +252,11 @@ style:
   ProtectedMemberInFinalClass:
     active: false
   RedundantVisibilityModifierRule:
-  
+    active: false
+  ReturnCount:
+    active: true
+    max: 2
+    excludedFunctions: "equals"
+  SafeCast:
+    active: true
+  S
