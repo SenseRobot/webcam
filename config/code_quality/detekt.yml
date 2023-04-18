@@ -259,4 +259,9 @@ style:
     excludedFunctions: "equals"
   SafeCast:
     active: true
-  S
+  SerialVersionUIDInSerializableClass:
+    active: false
+  SpacingBetweenPackageAndImports:
+    active: false
+  ThrowsCount:
+    active: t
