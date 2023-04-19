@@ -264,4 +264,11 @@ style:
   SpacingBetweenPackageAndImports:
     active: false
   ThrowsCount:
-    active: t
+    active: true
+    max: 2
+  TrailingWhitespace:
+    active: false
+  UnnecessaryAbstractClass:
+    active: false
+  UnnecessaryInheritance:
+    act
