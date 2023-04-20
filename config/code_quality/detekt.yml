@@ -283,4 +283,8 @@ style:
   UseDataClass:
     active: true
     excludeAnnotatedClasses: ""
-  UtilityClassWithPublicCon
+  UtilityClassWithPublicConstructor:
+    active: true
+  WildcardImport:
+    active: true
+    excludeImports: 'java.util.*,kotlinx.android.synthetic.*,java.se
