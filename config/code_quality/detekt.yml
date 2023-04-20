@@ -278,3 +278,9 @@ style:
     active: true
   UnusedImports:
     active: true
+  UnusedPrivateMember:
+    active: false
+  UseDataClass:
+    active: true
+    excludeAnnotatedClasses: ""
+  UtilityClassWithPublicCon
