@@ -271,4 +271,10 @@ style:
   UnnecessaryAbstractClass:
     active: false
   UnnecessaryInheritance:
-    act
+    active: true
+  UnnecessaryParentheses:
+    active: false
+  UntilInsteadOfRangeTo:
+    active: true
+  UnusedImports:
+    active: true
