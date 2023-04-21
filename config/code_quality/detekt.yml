@@ -287,4 +287,4 @@ style:
     active: true
   WildcardImport:
     active: true
-    excludeImports: 'java.util.*,kotlinx.android.synthetic.*,java.se
+    excludeImports: 'java.util.*,kotlinx.android.synthetic.*,java.security.*'
